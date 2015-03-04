@@ -1,0 +1,19 @@
+{
+  "name": "app-theme",
+  "version": "0.0.0",
+  "authors": [
+    "Sam Smith <sam@mintcanary.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3",
+    "lato": "~0.2.2"
+  }
+}

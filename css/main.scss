@@ -3,50 +3,72 @@
 ---
 @charset "utf-8";
 
+//Fonts
+$lato-font-path: '../bower_components/lato/font';
+@import "../bower_components/lato/scss/lato";
+
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+@import "base";
 
-$spacing-unit:     30px;
+//Bootstrap
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// Core variables and mixins
+//@import "bootstrap/variables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Reset and dependencies
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
 
-// Width of the content area
-$content-width:    800px;
+// Core CSS
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// Components
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/media";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 
+//Theme
+$base-spacing: 15px;
+@import "layout";
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+//Custom
+@import "app";

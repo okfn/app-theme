@@ -4,20 +4,52 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Hello, world!</h1>
+      <p>Do something awesome with this mysterious app.</p>
+      
+      <div class="input-group">
+        <div class="input-group-btn">
+            <button class="btn btn-default btn-lg btn-warning" type="button">URL</button>
+            <button class="btn btn-default btn-lg active" type="button">File</button>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        <input type="text" aria-label="Text input with segmented button dropdown" class="form-control input-lg" placeholder="http://">
+        <div class="input-group-btn">
+          <button class="btn btn-default btn-lg" type="button" disabled="disabled">Browse</button>
+          <button aria-expanded="false" data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-lg" type="button">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul role="menu" class="dropdown-menu dropdown-menu-right">
+            <li>File Type</li>
+            <li class="divider"></li>
+            <li><a href="#">CSV</a></li>
+            <li><a href="#">Excel</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary btn-lg" type="button">Do this thing <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Need help?
+      </div>
+      <div class="panel-body">
+        Need some help? Check out our amazing documentation <a href="docs">here</a>.
+      </div>
+    </div>
+  </div>
 
 </div>
