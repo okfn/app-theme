@@ -9,10 +9,6 @@ html {
   background-color:$footer-background;
 }
 
-body {
-  padding-top: $navbar-height;
-}
-
 .navbar-brand {
   font-weight:800;
   text-transform:uppercase;
@@ -52,7 +48,29 @@ body {
       background-size:80px auto;
       text-indent:-99999em;
       overflow:hidden;
+      top:-3px;
     }
+  }
+}
+
+
+#okf-panel {
+  position:absolute;
+  top:-120px;
+  @media (min-width: $screen-sm-min) {
+    position:relative;
+    top:0;
+  }
+  
+  & + .navbar {
+    border-top:solid 3px $brand-primary;
+  }
+  
+  & > iframe {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border: 0
   }
 }
 
