@@ -44,11 +44,15 @@ html {
       height:100px;
       position:absolute;
       right: $base-spacing;
-      background-image:url(http://assets.okfn.org/images/ok-ribbon.svg);
+      background-image:url(http://assets.okfn.org/images/ok-ribbon.png);
       background-size:80px auto;
       text-indent:-99999em;
       overflow:hidden;
       top:-3px;
+      
+      .svg & {
+        background-image:url(http://assets.okfn.org/images/ok-ribbon.svg);
+      }
       
       & + .navbar-header .navbar-toggle {
         float:left;
