@@ -49,6 +49,12 @@ html {
       text-indent:-99999em;
       overflow:hidden;
       top:-3px;
+      
+      & + .navbar-header .navbar-toggle {
+        float:left;
+        margin-left:$base-spacing;
+        margin-right:0;
+      }
     }
   }
 }
