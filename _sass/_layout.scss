@@ -1,6 +1,21 @@
+$header-gradient: radial-gradient(circle at 50% top, rgba($green,0.6) 0%,rgba($green,0) 75%),radial-gradient(circle at right top, $green 0%,rgba($green,0) 57%);
+
+a,
+a:focus {
+ outline: 0;
+}
+
 .jumbotron {
   p {
     font-weight: 300;
+  }
+  
+  & + .jumbotron {
+    margin-top:-30px;
+  }
+  
+  &:last-child {
+    margin-bottom:0;
   }
 }
 
@@ -10,28 +25,87 @@ html {
 }
 
 .navbar-brand {
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  position:relative;
   
-  &:before {
-    content:'Open Knowledge';
+  .text {
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    position:relative;
     display:block;
-    font-size:11px;
-    color:$brand-primary;
-    margin-top:-2px;
-    line-height:1;
-    letter-spacing:2px;
+    
+    &:before {
+      content:'Open Knowledge';
+      display:block;
+      font-size:10px;
+      color:$brand-primary;
+      margin-top:-2px;
+      line-height:1;
+      letter-spacing:2px;
+    }
   }
   
-  .release-phase {
+  .glyphicon {
+    $icon-colour:$green;
+    $icon-shadow: darken($icon-colour, 2);
+    
+    float:left;
+    background-color:$icon-colour;
+    border-radius:50%;
+    padding:8px;
+    margin-top:-7px;
+    text-align:center;
+    color:#fff;
+    font-size:18px;
+    width:35px;
+    height:35px;
+    line-height:19px;
+    text-shadow:  $icon-shadow 1px 1px,
+                  $icon-shadow 2px 2px,
+                  $icon-shadow 3px 3px,
+                  $icon-shadow 4px 4px,
+                  $icon-shadow 5px 5px,
+                  $icon-shadow 6px 6px,
+                  $icon-shadow 7px 7px,
+                  $icon-shadow 8px 8px,
+                  $icon-shadow 9px 9px,
+                  $icon-shadow 10px 10px,
+                  $icon-shadow 11px 11px,
+                  $icon-shadow 12px 12px;
+    overflow:hidden;
+    display:none;
+    
+    @media (min-width: $screen-sm-min) {
+      display:block;
+    }
+  }
+  
+  &.has-icon {
+    .text {
+      @media (min-width: $screen-sm-min) {
+        margin-left:42px;
+      }
+    }
+  }
+}
+
+.navbar-header {
+  position:relative;
+  
+  .release.badge {
     position:absolute;
-    right:$base-spacing;
-    display:block;
-    font-size:11px;
-    top:20px;
-    opacity:0.5;
+    left:100%;
+    top:24px;
+    margin-left:-12px;
+    text-transform:uppercase;
+    font-size:7px;
+    background-color: $gray-light;
+    padding: 2px 4px;
+    opacity:0.3;
+    display:none;
+    
+    @media (min-width: $grid-float-breakpoint) {
+      display:block;
+    }
   }
 }
 
@@ -39,26 +113,141 @@ html {
   .container {
     position:relative;
     
+    //ribbon
     .open-knowledge {
-      width:80px;
+      width:75px;
       height:100px;
       position:absolute;
       right: $base-spacing;
       background-image:url(http://assets.okfn.org/images/ok-ribbon.png);
-      background-size:80px auto;
-      text-indent:-99999em;
-      overflow:hidden;
-      top:-3px;
+      background-size:80px 300px;
+      background-position:center 0;
+      box-sizing: content-box;
+      top:-1px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+      z-index:1;
+      
+      .text {
+        @extend .sr-only;
+      }
+      
+      &:before {
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0;
+        border-color: transparent transparent darken($green, 5) transparent;
+        display:block;
+        margin-left:-3px;
+      }
+      @media (min-width: $screen-sm-min) {
+        border-bottom:solid 6px $green;
+        
+        &:after {
+          content:'';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 5px 6px 5px;
+          border-color: transparent transparent #fff transparent;
+          position:absolute;
+          bottom:0px;
+          left:50%;
+          margin-left:-5px;
+        }
+      }
       
       .svg & {
         background-image:url(http://assets.okfn.org/images/ok-ribbon.svg);
       }
       
-      & + .navbar-header .navbar-toggle {
-        float:left;
-        margin-left:$base-spacing;
-        margin-right:0;
+      &.collapsed {
+        top:-3px;
+        
+        &:before {
+          border-width: 0 0 3px 3px;
+        }
+        &:after {
+          @include rotate(180deg);
+        }
       }
+      
+      & + .navbar-header {
+        .navbar-toggle {
+          float:left;
+          margin-left:$base-spacing;
+          margin-right:0;
+        }
+        
+        & + #navbar {
+          .navbar-nav {
+            @media (min-width: $screen-sm-min) {
+              margin-right:95px;
+            }
+          }
+        }
+      }
+    }
+    
+    //nav
+    .navbar-nav {
+      @media (min-width: $screen-sm-min) {
+        float:right;
+        font-size:16px;
+        
+        & > li > a {
+          $vert-padding: 4px;
+          $vert-margin: (($navbar-height - 20px) / 2) - $vert-padding;
+          
+          margin-bottom: $vert-margin;
+          margin-top: $vert-margin;
+          padding-top:$vert-padding;
+          padding-bottom:$vert-padding;
+          border-radius:10px + $vert-padding;
+        }
+      }
+    }
+  }
+  
+  &.navbar-inverse {
+    background-image: $header-gradient;
+    
+    .navbar-brand {
+      color:#fff;
+      
+      .text {
+        &:before {
+          color:#fff;
+        }
+      }
+      
+      .glyphicon {
+        background-color:#fff;
+        text-shadow: none;
+        color:$navbar-inverse-bg;
+      }
+    }
+    
+    .release.badge {
+      background-color:#fff;
+      color:$navbar-inverse-bg;
+      opacity:0.6;
+    }
+    
+    .open-knowledge {
+      background-position:center -200px;
+      border-bottom-color:#2D2D2D;
+      
+      &:before {
+        border-bottom-color:#000;
+      }
+    }
+    
+    & + div .jumbotron:first-child {
+      background-image: $header-gradient;
+      background-color:$navbar-inverse-bg;
+      color:#fff;
     }
   }
 }
@@ -73,7 +262,11 @@ html {
   }
   
   & + .navbar {
-    border-top:solid 3px $brand-primary;
+    border-top:solid 3px darken($gray-lighter, 5);
+    
+    &.navbar-inverse {
+      border-top-color:$navbar-inverse-border;
+    }
   }
   
   & > iframe {
@@ -82,6 +275,27 @@ html {
     overflow: hidden;
     border: 0
   }
+  
+  &.in + .navbar {
+    
+  }
 }
+
+
+//Docs
+.docs {
+  & > .wrapper {
+    @include make-row();
+  
+    & > .nav {
+      @include make-sm-column(3);
+      
+      & + .page-content {
+        @include make-sm-column(9);
+      }
+    }
+  }
+}
+
 
 @import "footer";

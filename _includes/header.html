@@ -1,6 +1,7 @@
-<nav class="navbar navbar-default navbar-static-top">
+{% assign current = page.url | downcase | split: '/' %}
+<nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
-    <a href="http://okfn.org/" class="open-knowledge" title="An Open Knowledge Project" data-toggle="collapse" data-target="#okf-panel">An Open Knowledge Project</a>
+    <a href="http://okfn.org/" class="open-knowledge" title="An Open Knowledge Project" data-toggle="collapse" data-target="#okf-panel"><span class="text">An Open Knowledge Project</span></a>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -8,15 +9,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="navbar-brand{% if site.glyphicon %} has-icon{% endif %}" href="{{ site.baseurl }}/">
+        {% if site.glyphicon %}
+        <span class="glyphicon glyphicon-{{ site.glyphicon }}" aria-hidden="true"></span>
+        {% endif %}
+        <span class="text">{{ site.title }}</span>
+      </a>
+      {% if site.release_phase %}
+      <span class="{{ site.release_phase | replace:' ','-' | downcase }} release badge">{{ site.release_phase }}</span>
+      {% endif %}
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+        <li{% if current.last == 'goodtables' %} class="active"{% endif %}><a href="{{ "/goodtables" | prepend: site.baseurl }}">Good Tables</a></li>
+        <li{% if current.last == 'spend-publishing-dashboard' %} class="active"{% endif %}><a href="{{ "/spend-publishing-dashboard" | prepend: site.baseurl }}">Spend Publishing Dashboard</a></li>
+        <li{% if current.last == 'pricing' %} class="active"{% endif %}><a href="{{ "/pricing" | prepend: site.baseurl }}">Pricing</a></li>
+        <li{% if current.last == 'docs' %} class="active"{% endif %}><a href="{{ "/docs" | prepend: site.baseurl }}">Docs</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
