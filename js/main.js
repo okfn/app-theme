@@ -4,5 +4,7 @@
     $('.navbar .open-knowledge').click(function(e) {e.preventDefault();
   }); }
   
+  // default class
+  $('.navbar .open-knowledge').addClass('collapsed');
   
 })(jQuery);

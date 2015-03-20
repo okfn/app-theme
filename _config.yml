@@ -10,5 +10,16 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 release_phase:  alpha
 
+permalink: pretty
+
+glyphicon: ok
+
+defaults: 
+  - 
+    scope: 
+      path: "docs" 
+    values: 
+      layout: docs
+
 # Build settings
 markdown: kramdown
