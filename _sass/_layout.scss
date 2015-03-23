@@ -248,6 +248,36 @@ html {
       background-image: $header-gradient;
       background-color:$navbar-inverse-bg;
       color:#fff;
+      
+      p,
+      a {
+        color:#fff;
+      }
+      
+      .dropdown-menu > li > a {
+        color:$navbar-inverse-bg;
+      }
+      
+      .form-control,
+      .btn {
+        border-color:$navbar-inverse-bg;
+        color:$navbar-inverse-bg;
+        @include placeholder(rgba($green,0.5));
+      }
+      
+      .btn-primary {
+        background-color:#fff;
+      }
+      .btn-info {
+        color:#fff;
+        border-color:$gray-dark;
+      }
+      
+      .well {
+        background-color: rgba(0,0,0,0.03);
+        border-color: darken($navbar-inverse-bg, 2);
+        box-shadow: none;
+      }
     }
   }
 }
