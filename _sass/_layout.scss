@@ -85,7 +85,14 @@ html {
       color:#fff;
     }
   }
-} 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &.panel-heading {
+    margin:0;
+  }
+}
+
 
 .navbar-brand {
   
@@ -390,6 +397,49 @@ html {
       & + .page-content {
         @include make-sm-column(9);
       }
+    }
+  }
+}
+
+
+//Pricing
+
+.two-pricing-panels > .pricing-panel {
+  @include make-md-column(6);
+}
+.three-pricing-panels > .pricing-panel {
+  @include make-md-column(4);
+}
+.four-pricing-panels > .pricing-panel {
+  @include make-md-column(3);
+}
+
+.two-pricing-panels,
+.three-pricing-panels,
+.four-pricing-panels {
+  @include make-row();
+}
+
+.pricing-panel {
+  & > div:first-child {
+    @extend .panel;
+    @extend .panel-default;
+    
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      @extend .panel-heading;
+      
+      & + div {
+        @extend .panel-body;
+      }
+    }
+    footer {
+      @extend .panel-footer;
+      background-color:#fff;
     }
   }
 }
