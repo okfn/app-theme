@@ -93,6 +93,36 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.nav > li > a {
+  color:$gray-dark;
+}
+
+.nav-stacked > li {
+  background-color:$gray-lighter;
+  
+  & + li {
+    margin:0;
+  }
+  
+  &:first-child {
+    border-top:solid 15px $gray-lighter;
+  }
+  
+  &:last-child {
+    border-bottom:solid 15px $gray-lighter;
+  }
+  
+  & > a:hover,
+  & > a:focus {
+    background-color: rgba(255,255,255,0.50);
+  }
+  
+  &.active a {
+    background-color:$brand-primary;
+    color:#fff;
+  }
+}
+
 
 .navbar-brand {
   
@@ -388,7 +418,9 @@ h1, h2, h3, h4, h5, h6 {
 
 //Docs
 .docs {
-  & > .wrapper {
+  padding-bottom:20px;
+  
+  & > .container > .wrapper {
     @include make-row();
   
     & > .nav {
@@ -396,6 +428,10 @@ h1, h2, h3, h4, h5, h6 {
       
       & + .page-content {
         @include make-sm-column(9);
+        
+        .embed-responsive {
+          margin-bottom:20px;
+        }
       }
     }
   }
