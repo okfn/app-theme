@@ -4,7 +4,173 @@ title: Spend Publishing Dashboard
 ---
 
 <div class="dashboard">
-
-  Dashboard
-
+  <div class="jumbotron">
+    <div class="container">
+      <ul class="overview">
+        <li><span class="value"><span>1</span><span>5</span></span> <span class="label">publishers</span></li>
+        <li><span class="value"><span>1</span><span>5</span></span> <span class="label">sources</span></li>
+        <li><span class="value"><span>1</span><span>3</span></span> <span class="label">% valid</span></li>
+        <li><span class="value"><span>1</span><span>3</span></span> <span class="label">% timely</span></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="container">
+    <section class="line-chart">
+      <div class="intro">
+        <div class="text">
+          <h2>Spend Publishing</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus mauris molestie accumsan laoreet. Vestibulum elementum porta rhoncus. Vivamus sagittis urna congue sollicitudin mollis. Phasellus dictum elit sed posuere mattis. Donec egestas libero sit amet elit congue, quis placerat tellus pharetra.</p>
+        </div>
+        <div class="more">
+          <a class="btn btn-default" href="#" role="button">More</a>
+        </div>
+      </div>
+      <canvas id="lineChart" width="1140" height="300"></canvas>
+    </section>
+  </div>
+  <section class="publishers">
+    <div class="container">
+      <div class="intro">
+        <div class="text">
+          <h2>Publishers</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus mauris molestie accumsan laoreet. Vestibulum elementum porta rhoncus. Vivamus sagittis urna congue sollicitudin mollis. Phasellus dictum elit sed posuere mattis. Donec egestas libero sit amet elit congue, quis placerat tellus pharetra.</p>
+        </div>
+        <div class="more">
+          <a class="btn btn-default" href="#" role="button">More</a>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th></th>
+            <th>Jurisdiction</th>
+            <th>Contact</th>
+            <th></th>
+            <th></th>
+            <th class="score">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="danger">
+            <td><a href="#/publishers/xx_dept1" class="label label-default">xx_dept1</a></td>
+            <td>Department 1</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept1"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept1 Admin</td>
+            <td><a href="mailto:dept1-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">2</td>
+          </tr>
+          <tr class="danger">
+            <td><a href="#/publishers/xx_dept2" class="label label-default">xx_dept2</a></td>
+            <td>Department 2</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept2"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept2 Admin</td>
+            <td><a href="mailto:dept2-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">4</td>
+          </tr>
+          <tr class="warning">
+            <td><a href="#/publishers/xx_dept3" class="label label-default">xx_dept3</a></td>
+            <td>Department 3</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept3"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept3 Admin</td>
+            <td><a href="mailto:dept3-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">6</td>
+          </tr>
+          <tr class="warning">
+            <td><a href="#/publishers/xx_dept4" class="label label-default">xx_dept4</a></td>
+            <td>Department 4</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept4"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept4 Admin</td>
+            <td><a href="mailto:dept4-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">8</td>
+          </tr>
+          <tr class="success">
+            <td><a href="#/publishers/xx_dept5" class="label label-default">xx_dept5</a></td>
+            <td>Department 5</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept5"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept5 Admin</td>
+            <td><a href="mailto:dept5-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">10</td>
+          </tr>
+          <tr class="danger">
+            <td><a href="#/publishers/xx_dept6" class="label label-default">xx_dept6</a></td>
+            <td>Department 6</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept6"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept6 Admin</td>
+            <td><a href="mailto:dept6-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">2</td>
+          </tr>
+          <tr class="danger">
+            <td><a href="#/publishers/xx_dept7" class="label label-default">xx_dept7</a></td>
+            <td>Department 7</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept7"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept7 Admin</td>
+            <td><a href="mailto:dept7-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">4</td>
+          </tr>
+          <tr class="warning">
+            <td><a href="#/publishers/xx_dept8" class="label label-default">xx_dept8</a></td>
+            <td>Department 8</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept8"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept8 Admin</td>
+            <td><a href="mailto:dept8-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">6</td>
+          </tr>
+          <tr class="warning">
+            <td><a href="#/publishers/xx_dept9" class="label label-default">xx_dept9</a></td>
+            <td>Department 9</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept9"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept9 Admin</td>
+            <td><a href="mailto:dept9-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">8</td>
+          </tr>
+          <tr class="success">
+            <td><a href="#/publishers/xx_dept10" class="label label-default">xx_dept10</a></td>
+            <td>Department 10</td>
+            <td></td>
+            <td><a href="http://www.example.com/dept10"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></td>
+            <td>XX</td>
+            <td>Dept10 Admin</td>
+            <td><a href="mailto:dept10-admin@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></td>
+            <td><span class="glyphicon glyphicon-home" aria-hidden="true"></span></td>
+            <td class="score">10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
 </div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>

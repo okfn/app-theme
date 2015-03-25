@@ -19,10 +19,73 @@ a:focus {
   }
 }
 
+table.table {
+  thead tr th {
+    background-color:$gray;
+    color:#fff;
+  }
+}
+
 $footer-background: $gray-dark;
 html {
   background-color:$footer-background;
 }
+
+.counter {
+  margin-top:20px;
+  
+  .value > span {
+    background-color:$gray-dark;
+    font-weight:bold;
+    font-size:114px;
+    display:inline-block;
+    width:80px;
+    height:128px;
+    text-align:center;
+    margin-left:3px;
+    margin-right:3px;
+    line-height:124px;
+    border-radius:1px;
+    position:relative;
+    color:#fff;
+    
+    &:after {
+      content:'';
+      width:80px;
+      height:2px;
+      display:block;
+      position:absolute;
+      top:50%;
+      margin-top:-1px;
+      background-color:#fff;
+    }
+  }
+  
+  .label {
+    color:$gray-dark;
+    font-size:20px;
+    font-weight:normal;
+    text-transform:uppercase;
+    margin-top:15px;
+    display:block;
+    padding:0;
+  }
+ 
+  &.inverse {
+    .value > span {
+      background-color:#fff;
+      color:$navbar-inverse-bg;
+      
+      &:after {
+        background-color:$navbar-inverse-bg;
+      }
+    }
+    
+    .label {
+      color:#fff;
+    }
+  }
+} 
 
 .navbar-brand {
   
@@ -277,6 +340,10 @@ html {
         background-color: rgba(0,0,0,0.03);
         border-color: darken($navbar-inverse-bg, 2);
         box-shadow: none;
+      }
+      
+      .counter {
+        @extend .counter.inverse;
       }
     }
   }
