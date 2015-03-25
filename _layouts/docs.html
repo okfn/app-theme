@@ -1,19 +1,28 @@
 ---
 layout: default
 ---
-<div class="docs page container">
-  <div class="wrapper">
-    <ul class="nav nav-pills nav-stacked">
-    {% for page in site.pages %}
-      {% if page.layout == 'docs' and page.title %}
-      <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-    </ul>
+<div class="docs page">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Documentation</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="wrapper">
+      <ul class="nav nav-stacked">
+      {% assign ordered_pages = site.pages | sort:"order"  %}
+      {% for node in ordered_pages %}
+        {% if node.layout == 'docs' and node.title %}
+        <li {% if node.url == page.url %}class="active"{% endif %}><a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
   
-    <article class="page-content">
-      <h1 class="page-title">{{ page.title }}</h1>
-      {{ content }}
-    </article>
+      <article class="page-content">
+        <h2 class="page-title">{{ page.title }}</h2>
+        {{ content }}
+      </article>
+    </div>
   </div>
 </div>
