@@ -12,6 +12,7 @@ release_phase:  alpha
 
 permalink: pretty
 
+# navbar: inverse
 glyphicon: ok
 
 defaults: 
