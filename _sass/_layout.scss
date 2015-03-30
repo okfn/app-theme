@@ -17,6 +17,46 @@ a:focus {
   &:last-child {
     margin-bottom:0;
   }
+  
+  &.inverse {
+    background-image: $header-gradient;
+    background-color:$navbar-inverse-bg;
+    color:#fff;
+    
+    p,
+    a {
+      color:#fff;
+    }
+    
+    .dropdown-menu > li > a {
+      color:$navbar-inverse-bg;
+    }
+    
+    .form-control,
+    .btn {
+      border-color:$navbar-inverse-bg;
+      color:$navbar-inverse-bg;
+      @include placeholder(rgba($green,0.5));
+    }
+    
+    .btn-primary {
+      background-color:#fff;
+    }
+    .btn-info {
+      color:#fff;
+      border-color:$gray-dark;
+    }
+    
+    .well {
+      background-color: rgba(0,0,0,0.03);
+      border-color: darken($navbar-inverse-bg, 2);
+      box-shadow: none;
+    }
+    
+    .counter {
+      @extend .counter.inverse;
+    }
+  }
 }
 
 table.table {
@@ -72,6 +112,7 @@ html {
   }
  
   &.inverse {
+    background-color:#FF0004;
     .value > span {
       background-color:#fff;
       color:$navbar-inverse-bg;
@@ -186,6 +227,10 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  
+  &:hover {
+    color:$brand-primary;
+  }
 }
 
 .navbar-header {
@@ -292,6 +337,14 @@ h1, h2, h3, h4, h5, h6 {
     
     //nav
     .navbar-nav {
+      
+      & > .active > a,
+      & > .active > a:hover,
+      & > .active > a:focus {
+        background-color: $navbar-default-link-active-bg;
+        color: $navbar-default-link-active-color;
+      }
+      
       @media (min-width: $screen-sm-min) {
         float:right;
         font-size:16px;
@@ -344,44 +397,17 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
     
+    .navbar-nav {
+      & > .active > a,
+      & > .active > a:hover,
+      & > .active > a:focus {
+        background-color: $navbar-inverse-link-active-bg;
+        color: $navbar-inverse-link-active-color;
+      }
+    }
+    
     & + div .jumbotron:first-child {
-      background-image: $header-gradient;
-      background-color:$navbar-inverse-bg;
-      color:#fff;
-      
-      p,
-      a {
-        color:#fff;
-      }
-      
-      .dropdown-menu > li > a {
-        color:$navbar-inverse-bg;
-      }
-      
-      .form-control,
-      .btn {
-        border-color:$navbar-inverse-bg;
-        color:$navbar-inverse-bg;
-        @include placeholder(rgba($green,0.5));
-      }
-      
-      .btn-primary {
-        background-color:#fff;
-      }
-      .btn-info {
-        color:#fff;
-        border-color:$gray-dark;
-      }
-      
-      .well {
-        background-color: rgba(0,0,0,0.03);
-        border-color: darken($navbar-inverse-bg, 2);
-        box-shadow: none;
-      }
-      
-      .counter {
-        @extend .counter.inverse;
-      }
+      @extend .jumbotron.inverse;
     }
   }
 }
