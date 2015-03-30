@@ -341,8 +341,8 @@ h1, h2, h3, h4, h5, h6 {
       & > .active > a,
       & > .active > a:hover,
       & > .active > a:focus {
-        background-color: $navbar-default-link-active-bg;
-        color: $navbar-default-link-active-color;
+        background-color: $brand-primary;
+        color: #fff;
       }
       
       @media (min-width: $screen-sm-min) {
