@@ -98,6 +98,60 @@
       border-bottom:solid 1px rgba(0,0,0,0.10);
     }
   }
+  
+  .result.panel {
+    .panel-heading {
+      .badge,
+      .label {
+        margin-right:10px;
+      }
+      
+      ol {
+        counter-reset: finding-counter;
+        margin:0;
+        padding:0;
+        
+        li {
+          display:block;
+          clear:both;
+          
+          &:before {
+            content: counter(finding-counter);
+	          counter-increment: finding-counter;
+            background-color:#fff;
+            color:$gray-dark;
+            border-radius: 0.25em;
+            font-size: 75%;
+            font-weight: bold;
+            line-height: 1;
+            padding: 0.2em 0.6em 0.3em;
+            text-align: center;
+            vertical-align: baseline;
+            white-space: nowrap;
+            margin-right:10px;
+          }
+          
+          a:last-child {
+            float:right;
+          }
+        }
+      }
+    }
+    
+    .panel-body {
+      overflow-x:scroll;
+      
+      table {
+        
+        margin:0;
+        
+        .result-header-row,
+        .result-row-index {
+          background-color: $gray-lighter;
+        }
+      }
+    }
+  }
 }
 
 
@@ -198,7 +252,6 @@
       tr.warning {
         .score {
           background-color:$brand-warning;
-          color:#fff;
         }
       }
       tr.danger {
