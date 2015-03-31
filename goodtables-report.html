@@ -1,0 +1,373 @@
+---
+layout: default
+title: Good Tables
+---
+
+<div class="goodtables">
+
+  <div class="jumbotron warning">
+    <div class="container">
+    
+      <h1>Oops. The data source is not valid</h1>
+      <p>We processed a total of <strong>3865</strong> rows, of which <strong>1%</strong> were found to have invalid data.</p>
+      <a title="" href="http://127.0.0.1:5000/api/run?data=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F13029373%2Fokfn%2Fbis%2FOpenKnowledgePilot-December2014.xlsx&amp;schema=https%3A%2F%2Fraw.githubusercontent.com%2Fokfn%2Ftabular-validator%2Fmaster%2Fexamples%2Fhmt%2Fbis-modified.json&amp;report_limit=1000&amp;row_limit=20000&amp;format=excel" class="btn btn-info">JSON Link</a> &nbsp; <a title="" href="http://127.0.0.1:5000/reports?data=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F13029373%2Fokfn%2Fbis%2FOpenKnowledgePilot-December2014.xlsx&amp;schema=https%3A%2F%2Fraw.githubusercontent.com%2Fokfn%2Ftabular-validator%2Fmaster%2Fexamples%2Fhmt%2Fbis-modified.json&amp;report_limit=1000&amp;row_limit=20000&amp;format=excel" class="btn btn-info">HTML Link</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <p>Below we have a <strong>sample of 7 errors</strong> found when validating the data. Use this to identify problems, fix them in the source, and then upload the data to validate again!</p>
+    
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 79 duplicates the following rows which have already been seen: [78].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+        </tr>
+        <tr class="result-row">
+            <td class="result-row-index">79</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-01T00:00:00</td>
+            <td class="">Rail Travel Overseas</td>
+            <td class="">People, Strategy and Higher Education -  Ministerial and Parliamentary Support Team</td>
+            <td class="">FOREIGN AND COMMONWEALTH OFFICE (FCO)</td>
+            <td class="">66685.0</td>
+            <td class="">85.0</td>
+            <td class="">MPST Devolved Admin-Rail Travel Overseas</td>
+            <td class="">MK10 1PX</td>
+            <td class="">WGA ONLY</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 1015 duplicates the following rows which have already been seen: [1014].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+          </tr>
+          <tr class="result-row">
+            <td class="result-row-index">1015</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-05T00:00:00</td>
+            <td class="">Publications</td>
+            <td class="">Economics &amp; Markets - Analysis Directorate</td>
+            <td class="">JONES YARRELL LEADENHALL</td>
+            <td class="">71253.0</td>
+            <td class="">1.92</td>
+            <td class="">E&amp;M Devolved Admin-Publications</td>
+            <td class="">E3 3JG</td>
+            <td class="">VENDOR</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 1015 duplicates the following rows which have already been seen: [1014].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+          </tr>
+          <tr class="result-row">
+            <td class="result-row-index">1015</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-05T00:00:00</td>
+            <td class="">Publications</td>
+            <td class="">Economics &amp; Markets - Analysis Directorate</td>
+            <td class="">JONES YARRELL LEADENHALL</td>
+            <td class="">71253.0</td>
+            <td class="">1.92</td>
+            <td class="">E&amp;M Devolved Admin-Publications</td>
+            <td class="">E3 3JG</td>
+            <td class="">VENDOR</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 1015 duplicates the following rows which have already been seen: [1014].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+          </tr>
+          <tr class="result-row">
+            <td class="result-row-index">1015</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-05T00:00:00</td>
+            <td class="">Publications</td>
+            <td class="">Economics &amp; Markets - Analysis Directorate</td>
+            <td class="">JONES YARRELL LEADENHALL</td>
+            <td class="">71253.0</td>
+            <td class="">1.92</td>
+            <td class="">E&amp;M Devolved Admin-Publications</td>
+            <td class="">E3 3JG</td>
+            <td class="">VENDOR</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 1015 duplicates the following rows which have already been seen: [1014].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+          </tr>
+          <tr class="result-row">
+            <td class="result-row-index">1015</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-05T00:00:00</td>
+            <td class="">Publications</td>
+            <td class="">Economics &amp; Markets - Analysis Directorate</td>
+            <td class="">JONES YARRELL LEADENHALL</td>
+            <td class="">71253.0</td>
+            <td class="">1.92</td>
+            <td class="">E&amp;M Devolved Admin-Publications</td>
+            <td class="">E3 3JG</td>
+            <td class="">VENDOR</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 1015 duplicates the following rows which have already been seen: [1014].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+          </tr>
+          <tr class="result-row">
+            <td class="result-row-index">1015</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-05T00:00:00</td>
+            <td class="">Publications</td>
+            <td class="">Economics &amp; Markets - Analysis Directorate</td>
+            <td class="">JONES YARRELL LEADENHALL</td>
+            <td class="">71253.0</td>
+            <td class="">1.92</td>
+            <td class="">E&amp;M Devolved Admin-Publications</td>
+            <td class="">E3 3JG</td>
+            <td class="">VENDOR</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="result panel panel-default">
+      <div class="panel-heading">
+        <ol>
+          <li>
+            <span class="text-uppercase label label-danger">error</span>
+            <span class="label label-info">Structure</span>
+            <strong>Duplicate Row</strong>:&nbsp;
+            Row 1015 duplicates the following rows which have already been seen: [1014].&nbsp;<a target="_blank" href="/help#structure_004" title="More information on Duplicate Row">Read more</a>
+          </li>
+        </ol>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-condensed">
+          <tr class="result-header-row">
+            <th class="text-uppercase">Row</th>
+            <th>Department </th>
+            <th>Entity </th>
+            <th>Date of Payment </th>
+            <th>Expense Type </th>
+            <th>Expense Area </th>
+            <th>Supplier </th>
+            <th>Transaction Number </th>
+            <th>Amount </th>
+            <th>Description </th>
+            <th>Supplier Post Code </th>
+            <th>Supplier Type </th>
+            <th>Contract Number </th>
+            <th>Project Code </th>
+            <th>Expenditure Type </th>
+          </tr>
+          <tr class="result-row">
+            <td class="result-row-index">1015</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">Department for Business, Innovation and Skills</td>
+            <td class="">2014-12-05T00:00:00</td>
+            <td class="">Publications</td>
+            <td class="">Economics &amp; Markets - Analysis Directorate</td>
+            <td class="">JONES YARRELL LEADENHALL</td>
+            <td class="">71253.0</td>
+            <td class="">1.92</td>
+            <td class="">E&amp;M Devolved Admin-Publications</td>
+            <td class="">E3 3JG</td>
+            <td class="">VENDOR</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p><em>These results were calculated on Tue Mar 31 at 09:21 AM.</em></p>
+  </div>
+  
+</div>
