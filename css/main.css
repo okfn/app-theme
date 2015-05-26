@@ -330,7 +330,7 @@ hr {
   border: 0;
   border-top: 1px solid #eeeeee; }
 
-.sr-only, .navbar .container .open-knowledge .text {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1966,7 +1966,7 @@ select[multiple].input-lg,
 
 .has-feedback label ~ .form-control-feedback {
   top: 26px; }
-.has-feedback label.sr-only ~ .form-control-feedback, .has-feedback .navbar .container .open-knowledge label.text ~ .form-control-feedback, .navbar .container .open-knowledge .has-feedback label.text ~ .form-control-feedback {
+.has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
 
 .help-block {
@@ -5128,59 +5128,20 @@ h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pric
 
 .navbar .container {
   position: relative; }
-  .navbar .container .open-knowledge {
-    width: 75px;
-    height: 100px;
-    position: absolute;
-    right: 20px;
-    background-image: url(http://assets.okfn.org/images/ok-ribbon.png);
-    background-size: 80px 300px;
-    background-position: center 0;
-    box-sizing: content-box;
-    top: -1px;
-    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    z-index: 1; }
-    .navbar .container .open-knowledge:before {
-      content: '';
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0;
-      border-color: transparent transparent #699f00 transparent;
-      display: block;
-      margin-left: -3px; }
-    @media (min-width: 768px) {
-      .navbar .container .open-knowledge {
-        border-bottom: solid 6px #7ab800; }
-        .navbar .container .open-knowledge:after {
-          content: '';
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 0 5px 6px 5px;
-          border-color: transparent transparent #fff transparent;
-          position: absolute;
-          bottom: 0px;
-          left: 50%;
-          margin-left: -5px; } }
-    .svg .navbar .container .open-knowledge {
-      background-image: url(http://assets.okfn.org/images/ok-ribbon.svg); }
-    .navbar .container .open-knowledge.collapsed {
-      top: -3px; }
-      .navbar .container .open-knowledge.collapsed:before {
-        border-width: 0 0 3px 3px; }
-      .navbar .container .open-knowledge.collapsed:after {
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg); }
-    .navbar .container .open-knowledge + .navbar-header .navbar-toggle {
+  .navbar .container .ok-ribbon {
+    margin-left: -20px;
+    margin-right: -20px; }
+    @media only screen and (min-width: 576px) {
+      .navbar .container .ok-ribbon {
+        margin-left: 0;
+        margin-right: 0; } }
+    .navbar .container .ok-ribbon + .navbar-header .navbar-toggle {
       float: left;
       margin-left: 20px;
       margin-right: 0; }
-    @media (min-width: 768px) {
-      .navbar .container .open-knowledge + .navbar-header + #navbar .navbar-nav {
-        margin-right: 95px; } }
+    @media (min-width: 992px) {
+      .navbar .container .ok-ribbon + .navbar-header + #navbar .navbar-nav {
+        margin-right: 150px; } }
   .navbar .container .navbar-nav > .active > a, .navbar .container .navbar-nav > .active > a:hover, .navbar .container .navbar-nav > .active > a:focus {
     background-color: #7ab800;
     color: #fff; }

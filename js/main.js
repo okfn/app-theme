@@ -1,12 +1,5 @@
-(function($) {
-  // disable ribbon clickthrough
-  if ( $(document).width() > 767) { 
-    $('.navbar .open-knowledge').click(function(e) {e.preventDefault();
-  }); }
+(function($) { 
   
-  // default class
-  $('.navbar .open-knowledge').addClass('collapsed');
+  $('.pricing-panels').equalize({children: '.pricing-panel > div > div', equalize: 'outerHeight'});
   
 })(jQuery);
-
-$('.pricing-panels').equalize({children: '.pricing-panel > div > div', equalize: 'outerHeight'});

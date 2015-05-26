@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <link rel="stylesheet" href="//okfnlabs.org/ok-panel/assets/css/frontend.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/goodtables.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,13 +20,11 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="collapse" id="okf-panel">
-      <iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe>
-    </div>
+    <div id="ok-panel" class="closed"><iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe></div>
 
     <nav class="navbar navbar-static-top">
       <div class="container">
-        <a href="http://okfn.org/" class="open-knowledge" title="An Open Knowledge Project" data-toggle="collapse" data-target="#okf-panel"><span class="text">An Open Knowledge Project</span></a>
+        <a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -262,6 +261,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="//okfnlabs.org/ok-panel/assets/js/frontend.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
