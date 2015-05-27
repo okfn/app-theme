@@ -1,3 +1,9 @@
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: $line-height-computed;
+}
+
 a,
 a:focus {
  outline: 0;
@@ -62,6 +68,24 @@ a:focus {
   }
   &.warning {
     background-color:$brand-warning;
+  }
+  
+  &.icon {
+    position:relative;
+    overflow:hidden;
+  
+    & > .glyphicon {
+      position:absolute;
+      left:70%;
+      top:60%;
+      font-size:500px;
+      width:550px;
+      height:550px;
+      margin-top:-225px;
+      margin-left:-225px;
+      text-align:center;
+      opacity:0.1;
+    }
   }
 }
 
@@ -225,7 +249,10 @@ h1, h2, h3, h4, h5, h6 {
                   $icon-shadow 9px 9px,
                   $icon-shadow 10px 10px,
                   $icon-shadow 11px 11px,
-                  $icon-shadow 12px 12px;
+                  $icon-shadow 12px 12px,
+                  $icon-shadow 13px 13px,
+                  $icon-shadow 14px 14px,
+                  $icon-shadow 15px 15px;
     overflow:hidden;
     display:none;
     

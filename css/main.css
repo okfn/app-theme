@@ -351,7 +351,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit; }
   h1 small,
@@ -483,10 +483,10 @@ a.text-success:hover {
   color: #2b542c; }
 
 .text-info {
-  color: #31708f; }
+  color: #2d2d2d; }
 
 a.text-info:hover {
-  color: #245269; }
+  color: #141414; }
 
 .text-warning {
   color: #8a6d3b; }
@@ -516,10 +516,10 @@ a.bg-success:hover {
   background-color: #c1e2b3; }
 
 .bg-info {
-  background-color: #d9edf7; }
+  background-color: #eaeaea; }
 
 a.bg-info:hover {
-  background-color: #afd9ee; }
+  background-color: #d1d1d1; }
 
 .bg-warning {
   background-color: #fcf8e3; }
@@ -658,8 +658,8 @@ samp {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #333333;
+  background-color: #F5F5F5;
   border-radius: 4px; }
 
 kbd {
@@ -685,7 +685,7 @@ pre {
   word-wrap: break-word;
   color: #333333;
   background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  border: 1px solid #f5f5f5;
   border-radius: 4px; }
   pre code {
     padding: 0;
@@ -1490,11 +1490,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
-  background-color: #d9edf7; }
+  background-color: #eaeaea; }
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
-  background-color: #c4e3f3; }
+  background-color: #dddddd; }
 
 .table > thead > tr > td.warning,
 .table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th,
@@ -3479,13 +3479,13 @@ a.thumbnail.active {
     color: #2b542c; }
 
 .alert-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #31708f; }
+  background-color: #eaeaea;
+  border-color: #d8d8d8;
+  color: #2d2d2d; }
   .alert-info hr {
-    border-top-color: #a6e1ec; }
+    border-top-color: #cbcbcb; }
   .alert-info .alert-link {
-    color: #245269; }
+    color: #141414; }
 
 .alert-warning {
   background-color: #fcf8e3;
@@ -3693,20 +3693,20 @@ a.list-group-item-success {
     border-color: #3c763d; }
 
 .list-group-item-info {
-  color: #31708f;
-  background-color: #d9edf7; }
+  color: #2d2d2d;
+  background-color: #eaeaea; }
 
 a.list-group-item-info {
-  color: #31708f; }
+  color: #2d2d2d; }
   a.list-group-item-info .list-group-item-heading {
     color: inherit; }
   a.list-group-item-info:hover, a.list-group-item-info:focus {
-    color: #31708f;
-    background-color: #c4e3f3; }
+    color: #2d2d2d;
+    background-color: #dddddd; }
   a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus {
     color: #fff;
-    background-color: #31708f;
-    border-color: #31708f; }
+    background-color: #2d2d2d;
+    border-color: #2d2d2d; }
 
 .list-group-item-warning {
   color: #8a6d3b;
@@ -4108,18 +4108,18 @@ a.list-group-item-danger {
     border-bottom-color: #d6e9c6; }
 
 .panel-info {
-  border-color: #bce8f1; }
+  border-color: #d8d8d8; }
   .panel-info > .panel-heading, .pricing-panel > div.panel-info:first-child > h1, .pricing-panel > div.panel-info:first-child > h2, .pricing-panel > div.panel-info:first-child > h3, .pricing-panel > div.panel-info:first-child > h4, .pricing-panel > div.panel-info:first-child > h5, .pricing-panel > div.panel-info:first-child > h6 {
-    color: #31708f;
-    background-color: #d9edf7;
-    border-color: #bce8f1; }
+    color: #2d2d2d;
+    background-color: #eaeaea;
+    border-color: #d8d8d8; }
     .panel-info > .panel-heading + .panel-collapse > .panel-body, .pricing-panel > div.panel-info:first-child > h1 + .panel-collapse > .panel-body, .pricing-panel > div.panel-info:first-child > h2 + .panel-collapse > .panel-body, .pricing-panel > div.panel-info:first-child > h3 + .panel-collapse > .panel-body, .pricing-panel > div.panel-info:first-child > h4 + .panel-collapse > .panel-body, .pricing-panel > div.panel-info:first-child > h5 + .panel-collapse > .panel-body, .pricing-panel > div.panel-info:first-child > h6 + .panel-collapse > .panel-body, .pricing-panel.panel-info > .panel-heading + div.panel-collapse:first-child > h1 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h1 + div.panel-collapse:first-child > h1 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h2 + div.panel-collapse:first-child > h1 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h3 + div.panel-collapse:first-child > h1 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h4 + div.panel-collapse:first-child > h1 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h5 + div.panel-collapse:first-child > h1 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h6 + div.panel-collapse:first-child > h1 + div, .pricing-panel.panel-info > .panel-heading + div.panel-collapse:first-child > h2 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h1 + div.panel-collapse:first-child > h2 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h2 + div.panel-collapse:first-child > h2 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h3 + div.panel-collapse:first-child > h2 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h4 + div.panel-collapse:first-child > h2 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h5 + div.panel-collapse:first-child > h2 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h6 + div.panel-collapse:first-child > h2 + div, .pricing-panel.panel-info > .panel-heading + div.panel-collapse:first-child > h3 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h1 + div.panel-collapse:first-child > h3 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h2 + div.panel-collapse:first-child > h3 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h3 + div.panel-collapse:first-child > h3 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h4 + div.panel-collapse:first-child > h3 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h5 + div.panel-collapse:first-child > h3 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h6 + div.panel-collapse:first-child > h3 + div, .pricing-panel.panel-info > .panel-heading + div.panel-collapse:first-child > h4 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h1 + div.panel-collapse:first-child > h4 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h2 + div.panel-collapse:first-child > h4 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h3 + div.panel-collapse:first-child > h4 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h4 + div.panel-collapse:first-child > h4 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h5 + div.panel-collapse:first-child > h4 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h6 + div.panel-collapse:first-child > h4 + div, .pricing-panel.panel-info > .panel-heading + div.panel-collapse:first-child > h5 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h1 + div.panel-collapse:first-child > h5 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h2 + div.panel-collapse:first-child > h5 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h3 + div.panel-collapse:first-child > h5 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h4 + div.panel-collapse:first-child > h5 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h5 + div.panel-collapse:first-child > h5 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h6 + div.panel-collapse:first-child > h5 + div, .pricing-panel.panel-info > .panel-heading + div.panel-collapse:first-child > h6 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h1 + div.panel-collapse:first-child > h6 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h2 + div.panel-collapse:first-child > h6 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h3 + div.panel-collapse:first-child > h6 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h4 + div.panel-collapse:first-child > h6 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h5 + div.panel-collapse:first-child > h6 + div, .pricing-panel > div.pricing-panel.panel-info:first-child > h6 + div.panel-collapse:first-child > h6 + div {
-      border-top-color: #bce8f1; }
+      border-top-color: #d8d8d8; }
     .panel-info > .panel-heading .badge, .pricing-panel > div.panel-info:first-child > h1 .badge, .pricing-panel > div.panel-info:first-child > h2 .badge, .pricing-panel > div.panel-info:first-child > h3 .badge, .pricing-panel > div.panel-info:first-child > h4 .badge, .pricing-panel > div.panel-info:first-child > h5 .badge, .pricing-panel > div.panel-info:first-child > h6 .badge {
-      color: #d9edf7;
-      background-color: #31708f; }
+      color: #eaeaea;
+      background-color: #2d2d2d; }
   .panel-info > .panel-footer + .panel-collapse > .panel-body, .pricing-panel > div:first-child .panel-info > footer + .panel-collapse > .panel-body, .pricing-panel.panel-info > .panel-footer + div.panel-collapse:first-child > h1 + div, .pricing-panel > div:first-child .pricing-panel.panel-info > footer + div.panel-collapse:first-child > h1 + div, .pricing-panel.panel-info > .panel-footer + div.panel-collapse:first-child > h2 + div, .pricing-panel > div:first-child .pricing-panel.panel-info > footer + div.panel-collapse:first-child > h2 + div, .pricing-panel.panel-info > .panel-footer + div.panel-collapse:first-child > h3 + div, .pricing-panel > div:first-child .pricing-panel.panel-info > footer + div.panel-collapse:first-child > h3 + div, .pricing-panel.panel-info > .panel-footer + div.panel-collapse:first-child > h4 + div, .pricing-panel > div:first-child .pricing-panel.panel-info > footer + div.panel-collapse:first-child > h4 + div, .pricing-panel.panel-info > .panel-footer + div.panel-collapse:first-child > h5 + div, .pricing-panel > div:first-child .pricing-panel.panel-info > footer + div.panel-collapse:first-child > h5 + div, .pricing-panel.panel-info > .panel-footer + div.panel-collapse:first-child > h6 + div, .pricing-panel > div:first-child .pricing-panel.panel-info > footer + div.panel-collapse:first-child > h6 + div {
-    border-bottom-color: #bce8f1; }
+    border-bottom-color: #d8d8d8; }
 
 .panel-warning {
   border-color: #faebcc; }
@@ -4940,6 +4940,11 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 21px; }
+
 a,
 a:focus {
   outline: 0; }
@@ -4992,6 +4997,20 @@ a:focus {
   color: #fff; }
 .jumbotron.warning {
   background-color: #E9D046; }
+.jumbotron.icon {
+  position: relative;
+  overflow: hidden; }
+  .jumbotron.icon > .glyphicon {
+    position: absolute;
+    left: 70%;
+    top: 60%;
+    font-size: 500px;
+    width: 550px;
+    height: 550px;
+    margin-top: -225px;
+    margin-left: -225px;
+    text-align: center;
+    opacity: 0.1; }
 
 table.table thead tr th {
   background-color: #555555;
@@ -5092,7 +5111,7 @@ h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pric
   width: 35px;
   height: 35px;
   line-height: 19px;
-  text-shadow: #73ae00 1px 1px, #73ae00 2px 2px, #73ae00 3px 3px, #73ae00 4px 4px, #73ae00 5px 5px, #73ae00 6px 6px, #73ae00 7px 7px, #73ae00 8px 8px, #73ae00 9px 9px, #73ae00 10px 10px, #73ae00 11px 11px, #73ae00 12px 12px;
+  text-shadow: #73ae00 1px 1px, #73ae00 2px 2px, #73ae00 3px 3px, #73ae00 4px 4px, #73ae00 5px 5px, #73ae00 6px 6px, #73ae00 7px 7px, #73ae00 8px 8px, #73ae00 9px 9px, #73ae00 10px 10px, #73ae00 11px 11px, #73ae00 12px 12px, #73ae00 13px 13px, #73ae00 14px 14px, #73ae00 15px 15px;
   overflow: hidden;
   display: none; }
   @media (min-width: 768px) {
