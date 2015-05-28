@@ -4,6 +4,11 @@ h6, .h6 {
   margin-top: $line-height-computed;
 }
 
+hr {
+  margin-top: $line-height-computed * 2;
+  margin-bottom: $line-height-computed * 2;
+}
+
 a,
 a:focus {
  outline: 0;
