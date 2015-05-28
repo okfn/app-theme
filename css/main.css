@@ -3111,7 +3111,7 @@ tbody.collapse.in {
 
 .navbar-inverse {
   background-color: #699f00;
-  border-color: #629400; }
+  border-color: rgba(105, 159, 0, 0); }
   .navbar-inverse .navbar-brand {
     color: rgba(255, 255, 255, 0.9); }
     .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
@@ -3131,7 +3131,7 @@ tbody.collapse.in {
     color: #444;
     background-color: transparent; }
   .navbar-inverse .navbar-toggle {
-    border-color: #629400; }
+    border-color: rgba(105, 159, 0, 0); }
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
       background-color: #333; }
     .navbar-inverse .navbar-toggle .icon-bar {
@@ -3144,9 +3144,9 @@ tbody.collapse.in {
     color: #699f00; }
   @media (max-width: 991px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-      border-color: #629400; }
+      border-color: rgba(105, 159, 0, 0); }
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-      background-color: #629400; }
+      background-color: rgba(105, 159, 0, 0); }
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
       color: rgba(255, 255, 255, 0.9); }
       .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5215,7 +5215,7 @@ h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pric
   #okf-panel + .navbar {
     border-top: solid 3px #e2e2e2; }
     #okf-panel + .navbar.navbar-inverse {
-      border-top-color: #629400; }
+      border-top-color: rgba(105, 159, 0, 0); }
   #okf-panel > iframe {
     width: 100%;
     height: 120px;
