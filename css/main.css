@@ -5072,8 +5072,17 @@ html {
 h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pricing-panel > div:first-child > h2, h3.panel-heading, .pricing-panel > div:first-child > h3, h4.panel-heading, .pricing-panel > div:first-child > h4, h5.panel-heading, .pricing-panel > div:first-child > h5, h6.panel-heading, .pricing-panel > div:first-child > h6 {
   margin: 0; }
 
-.panel-heading a, .pricing-panel > div:first-child > h1 a, .pricing-panel > div:first-child > h2 a, .pricing-panel > div:first-child > h3 a, .pricing-panel > div:first-child > h4 a, .pricing-panel > div:first-child > h5 a, .pricing-panel > div:first-child > h6 a {
-  color: #fff; }
+body > .panel, body.pricing-panel > div:first-child {
+  border-radius: 0;
+  border-left: none;
+  border-right: none; }
+
+.panel, .pricing-panel > div:first-child {
+  background-color: #eeeeee; }
+  .panel .panel-heading a, .pricing-panel > div:first-child .panel-heading a, .pricing-panel > div:first-child > h1 a, .pricing-panel > div:first-child > h2 a, .pricing-panel > div:first-child > h3 a, .pricing-panel > div:first-child > h4 a, .pricing-panel > div:first-child > h5 a, .pricing-panel > div:first-child > h6 a {
+    color: #fff; }
+  .panel .panel-body, .pricing-panel > div:first-child .panel-body, .pricing-panel > div:first-child > h1 + div, .pricing-panel > div:first-child > h2 + div, .pricing-panel > div:first-child > h3 + div, .pricing-panel > div:first-child > h4 + div, .pricing-panel > div:first-child > h5 + div, .pricing-panel > div:first-child > h6 + div {
+    background-color: #fff; }
 
 .nav > li > a {
   color: #333333; }
