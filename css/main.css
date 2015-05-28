@@ -5016,6 +5016,9 @@ table.table thead tr th {
   background-color: #555555;
   color: #fff; }
 
+.input-group-addon a {
+  color: #333333; }
+
 html {
   background-color: #333333; }
 

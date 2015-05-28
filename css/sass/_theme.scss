@@ -96,6 +96,12 @@ table.table {
   }
 }
 
+.input-group-addon {
+  a {
+    color:$gray-dark;
+  }
+}
+
 $footer-background: $gray-dark;
 html {
   background-color:$footer-background;
