@@ -5153,7 +5153,8 @@ h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pric
     @media only screen and (min-width: 576px) {
       .navbar .container .ok-ribbon {
         margin-left: 0;
-        margin-right: 0; } }
+        margin-right: 0;
+        position: absolute; } }
     .navbar .container .ok-ribbon + .navbar-header .navbar-toggle {
       float: left;
       margin-left: 20px;
