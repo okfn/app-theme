@@ -491,6 +491,41 @@ body > .panel {
 }
 
 
+// Carousel
+
+.carousel {
+  .carousel-indicators li,
+  .carousel-indicators li.active {
+    height: 10px;
+    margin: 1px;
+    width: 10px;
+  }
+  
+  &.text {
+    text-align:center;
+    
+    & > div {
+      padding-top:$base-spacing * 2;
+      padding-bottom:$base-spacing * 2;
+    }
+    
+    .carousel-indicators {
+      bottom:0;
+      
+      li {
+        background-color: rgba($brand-primary, 0.3);
+        border-color: rgba($brand-primary, 0);
+        
+        &.active {
+          background-color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+
+
 //Pricing
 
 .two-pricing-panels > .pricing-panel {
