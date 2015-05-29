@@ -5078,7 +5078,8 @@ body > .panel, body.pricing-panel > div:first-child {
   border-right: none; }
 
 .panel, .pricing-panel > div:first-child {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  box-shadow: none; }
   .panel .panel-heading a, .pricing-panel > div:first-child .panel-heading a, .pricing-panel > div:first-child > h1 a, .pricing-panel > div:first-child > h2 a, .pricing-panel > div:first-child > h3 a, .pricing-panel > div:first-child > h4 a, .pricing-panel > div:first-child > h5 a, .pricing-panel > div:first-child > h6 a {
     color: #fff; }
   .panel .panel-body, .pricing-panel > div:first-child .panel-body, .pricing-panel > div:first-child > h1 + div, .pricing-panel > div:first-child > h2 + div, .pricing-panel > div:first-child > h3 + div, .pricing-panel > div:first-child > h4 + div, .pricing-panel > div:first-child > h5 + div, .pricing-panel > div:first-child > h6 + div {
