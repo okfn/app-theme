@@ -99,7 +99,7 @@
       content: counter(finding-counter);
       counter-increment: finding-counter;
       background-color: #fff;
-      color: #333333;
+      color: #414141;
       border-radius: 0.25em;
       font-size: 75%;
       font-weight: bold;
@@ -117,6 +117,6 @@
     margin: 0; }
     .goodtables .result.panel .panel-body table .result-header-row,
     .goodtables .result.panel .panel-body table .result-row-index {
-      background-color: #eeeeee; }
+      background-color: #f6f6f6; }
 
 /*# sourceMappingURL=goodtables.css.map */
