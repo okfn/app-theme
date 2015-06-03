@@ -1,3 +1,12 @@
+/* ==========================================================================
+   Base styles / Bootstrap overrides
+   ========================================================================== */
+
+$footer-background: $gray-darker;
+html {
+  background-color:$footer-background;
+}
+
 h4, .h4,
 h5, .h5,
 h6, .h6 {
@@ -13,6 +22,18 @@ a,
 a:focus {
  outline: 0;
 }
+
+table.table {
+  thead tr th {
+    background-color:$gray;
+    color:#fff;
+  }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
 
 .pad-top-small {
   padding-top:$base-spacing;
@@ -31,6 +52,18 @@ a:focus {
 }
 .pad-bottom-large {
   padding-bottom:$base-spacing * 2 + $base-spacing;
+}
+
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 .jumbotron {
@@ -113,22 +146,10 @@ a:focus {
   }
 }
 
-table.table {
-  thead tr th {
-    background-color:$gray;
-    color:#fff;
-  }
-}
-
 .input-group-addon {
   a {
     color:$gray-dark;
   }
-}
-
-$footer-background: $gray-darker;
-html {
-  background-color:$footer-background;
 }
 
 .counter {
@@ -189,28 +210,23 @@ html {
 }
 
 //forms
-
 .form-control:focus {
   box-shadow:none;
 }
 
 
-
 // Panels
-
 h1, h2, h3, h4, h5, h6 {
   &.panel-heading {
     margin:0;
   }
 }
-
 body > .panel {
   border-radius:0;
   border-left:none;
   border-right:none;
   margin:0;
 }
-
 .panel {
   background-color:$gray-lighter;
   box-shadow:none;
@@ -220,10 +236,60 @@ body > .panel {
       color:#fff;
     }
   }
-  
   .panel-body {
     background-color:#fff;
   }
+}
+
+//Pricing
+.two-pricing-panels > .pricing-panel {
+  @include make-md-column(6);
+}
+.three-pricing-panels > .pricing-panel {
+  @include make-md-column(4);
+}
+.four-pricing-panels > .pricing-panel {
+  @include make-md-column(3);
+}
+
+.two-pricing-panels,
+.three-pricing-panels,
+.four-pricing-panels {
+  @include make-row();
+}
+
+.pricing-panel {
+  & > div:first-child {
+    @extend .panel;
+    @extend .panel-default;
+    
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+      @extend .panel-heading;
+      
+      & + div {
+        @extend .panel-body;
+      }
+    }
+    footer {
+      @extend .panel-footer;
+      background-color:#fff;
+    }
+  }
+}
+
+
+//thumbs
+.thumbnail + .caption {
+  color:$gray;
+  font-size: 86%;
+  display:block;
+  margin: - ($line-height-computed / 3) * 2 3px $line-height-computed 3px;
+  text-decoration:none;
 }
 
 
@@ -258,16 +324,39 @@ body > .panel {
 }
 
 
-//thumbs
-
-.thumbnail + .caption {
-  color:$gray;
-  font-size: 86%;
-  display:block;
-  margin: - ($line-height-computed / 3) * 2 3px $line-height-computed 3px;
-  text-decoration:none;
+// Carousel
+.carousel {
+  .carousel-indicators li,
+  .carousel-indicators li.active {
+    height: 10px;
+    margin: 1px;
+    width: 10px;
+  }
+  
+  &.text {
+    
+    & > div {
+      padding-top:$base-spacing * 2;
+      padding-bottom:$base-spacing * 2;
+    }
+    
+    .carousel-indicators {
+      bottom:0;
+      
+      li {
+        background-color: rgba($brand-primary, 0.3);
+        border-color: rgba($brand-primary, 0);
+        
+        &.active {
+          background-color: $brand-primary;
+        }
+      }
+    }
+  }
 }
-
+/* ==========================================================================
+   Layout
+   ========================================================================== */
 
 .navbar-brand {
   
@@ -525,83 +614,6 @@ body > .panel {
           margin-bottom:20px;
         }
       }
-    }
-  }
-}
-
-
-// Carousel
-
-.carousel {
-  .carousel-indicators li,
-  .carousel-indicators li.active {
-    height: 10px;
-    margin: 1px;
-    width: 10px;
-  }
-  
-  &.text {
-    
-    & > div {
-      padding-top:$base-spacing * 2;
-      padding-bottom:$base-spacing * 2;
-    }
-    
-    .carousel-indicators {
-      bottom:0;
-      
-      li {
-        background-color: rgba($brand-primary, 0.3);
-        border-color: rgba($brand-primary, 0);
-        
-        &.active {
-          background-color: $brand-primary;
-        }
-      }
-    }
-  }
-}
-
-
-
-//Pricing
-
-.two-pricing-panels > .pricing-panel {
-  @include make-md-column(6);
-}
-.three-pricing-panels > .pricing-panel {
-  @include make-md-column(4);
-}
-.four-pricing-panels > .pricing-panel {
-  @include make-md-column(3);
-}
-
-.two-pricing-panels,
-.three-pricing-panels,
-.four-pricing-panels {
-  @include make-row();
-}
-
-.pricing-panel {
-  & > div:first-child {
-    @extend .panel;
-    @extend .panel-default;
-    
-    & > h1,
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
-      @extend .panel-heading;
-      
-      & + div {
-        @extend .panel-body;
-      }
-    }
-    footer {
-      @extend .panel-footer;
-      background-color:#fff;
     }
   }
 }

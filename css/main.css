@@ -4940,6 +4940,12 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* ==========================================================================
+   Base styles / Bootstrap overrides
+   ========================================================================== */
+html {
+  background-color: #323232; }
+
 h4, .h4,
 h5, .h5,
 h6, .h6 {
@@ -4953,6 +4959,13 @@ a,
 a:focus {
   outline: 0; }
 
+table.table thead tr th {
+  background-color: #686868;
+  color: #fff; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
 .pad-top-small {
   padding-top: 20px; }
 
@@ -4970,6 +4983,15 @@ a:focus {
 
 .pad-bottom-large {
   padding-bottom: 60px; }
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
 
 .jumbotron p {
   font-weight: 300; }
@@ -5034,15 +5056,8 @@ a:focus {
     text-align: center;
     opacity: 0.1; }
 
-table.table thead tr th {
-  background-color: #686868;
-  color: #fff; }
-
 .input-group-addon a {
   color: #414141; }
-
-html {
-  background-color: #323232; }
 
 .counter {
   margin-top: 20px; }
@@ -5107,6 +5122,63 @@ body > .panel, body.pricing-panel > div:first-child {
   .panel .panel-body, .pricing-panel > div:first-child .panel-body, .pricing-panel > div:first-child > h1 + div, .pricing-panel > div:first-child > h2 + div, .pricing-panel > div:first-child > h3 + div, .pricing-panel > div:first-child > h4 + div, .pricing-panel > div:first-child > h5 + div, .pricing-panel > div:first-child > h6 + div {
     background-color: #fff; }
 
+.two-pricing-panels > .pricing-panel {
+  position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 992px) {
+    .two-pricing-panels > .pricing-panel {
+      float: left;
+      width: 50%; } }
+
+.three-pricing-panels > .pricing-panel {
+  position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 992px) {
+    .three-pricing-panels > .pricing-panel {
+      float: left;
+      width: 33.33333%; } }
+
+.four-pricing-panels > .pricing-panel {
+  position: relative;
+  min-height: 1px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 992px) {
+    .four-pricing-panels > .pricing-panel {
+      float: left;
+      width: 25%; } }
+
+.two-pricing-panels,
+.three-pricing-panels,
+.four-pricing-panels {
+  margin-left: -20px;
+  margin-right: -20px; }
+  .two-pricing-panels:before, .two-pricing-panels:after,
+  .three-pricing-panels:before,
+  .three-pricing-panels:after,
+  .four-pricing-panels:before,
+  .four-pricing-panels:after {
+    content: " ";
+    display: table; }
+  .two-pricing-panels:after,
+  .three-pricing-panels:after,
+  .four-pricing-panels:after {
+    clear: both; }
+
+.pricing-panel > div:first-child footer {
+  background-color: #fff; }
+
+.thumbnail + .caption {
+  color: #686868;
+  font-size: 86%;
+  display: block;
+  margin: -14px 3px 21px 3px;
+  text-decoration: none; }
+
 .nav > li > a {
   color: #414141; }
 
@@ -5124,13 +5196,25 @@ body > .panel, body.pricing-panel > div:first-child {
     background-color: #7ab800;
     color: #fff; }
 
-.thumbnail + .caption {
-  color: #686868;
-  font-size: 86%;
-  display: block;
-  margin: -14px 3px 21px 3px;
-  text-decoration: none; }
+.carousel .carousel-indicators li,
+.carousel .carousel-indicators li.active {
+  height: 10px;
+  margin: 1px;
+  width: 10px; }
+.carousel.text > div {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+.carousel.text .carousel-indicators {
+  bottom: 0; }
+  .carousel.text .carousel-indicators li {
+    background-color: rgba(122, 184, 0, 0.3);
+    border-color: rgba(122, 184, 0, 0); }
+    .carousel.text .carousel-indicators li.active {
+      background-color: #7ab800; }
 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
 .navbar-brand .text {
   font-weight: 900;
   text-transform: uppercase;
@@ -5291,72 +5375,6 @@ body > .panel, body.pricing-panel > div:first-child {
             width: 75%; } }
         .docs > .container > .wrapper > .nav + .page-content .embed-responsive {
           margin-bottom: 20px; }
-
-.carousel .carousel-indicators li,
-.carousel .carousel-indicators li.active {
-  height: 10px;
-  margin: 1px;
-  width: 10px; }
-.carousel.text > div {
-  padding-top: 40px;
-  padding-bottom: 40px; }
-.carousel.text .carousel-indicators {
-  bottom: 0; }
-  .carousel.text .carousel-indicators li {
-    background-color: rgba(122, 184, 0, 0.3);
-    border-color: rgba(122, 184, 0, 0); }
-    .carousel.text .carousel-indicators li.active {
-      background-color: #7ab800; }
-
-.two-pricing-panels > .pricing-panel {
-  position: relative;
-  min-height: 1px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  @media (min-width: 992px) {
-    .two-pricing-panels > .pricing-panel {
-      float: left;
-      width: 50%; } }
-
-.three-pricing-panels > .pricing-panel {
-  position: relative;
-  min-height: 1px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  @media (min-width: 992px) {
-    .three-pricing-panels > .pricing-panel {
-      float: left;
-      width: 33.33333%; } }
-
-.four-pricing-panels > .pricing-panel {
-  position: relative;
-  min-height: 1px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  @media (min-width: 992px) {
-    .four-pricing-panels > .pricing-panel {
-      float: left;
-      width: 25%; } }
-
-.two-pricing-panels,
-.three-pricing-panels,
-.four-pricing-panels {
-  margin-left: -20px;
-  margin-right: -20px; }
-  .two-pricing-panels:before, .two-pricing-panels:after,
-  .three-pricing-panels:before,
-  .three-pricing-panels:after,
-  .four-pricing-panels:before,
-  .four-pricing-panels:after {
-    content: " ";
-    display: table; }
-  .two-pricing-panels:after,
-  .three-pricing-panels:after,
-  .four-pricing-panels:after {
-    clear: both; }
-
-.pricing-panel > div:first-child footer {
-  background-color: #fff; }
 
 /* footer */
 .site-footer {
