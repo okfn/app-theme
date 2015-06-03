@@ -5144,7 +5144,7 @@ body > .panel, body.pricing-panel > div:first-child {
     color: #7ab800;
     margin-top: -2px;
     line-height: 1;
-    letter-spacing: 2px; }
+    letter-spacing: 1px; }
 .navbar-brand .glyphicon {
   float: left;
   background-color: #7ab800;
