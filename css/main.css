@@ -5093,7 +5093,8 @@ h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pric
 body > .panel, body.pricing-panel > div:first-child {
   border-radius: 0;
   border-left: none;
-  border-right: none; }
+  border-right: none;
+  margin: 0; }
 
 .panel, .pricing-panel > div:first-child {
   background-color: #f6f6f6;
