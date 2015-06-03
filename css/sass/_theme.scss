@@ -14,6 +14,25 @@ a:focus {
  outline: 0;
 }
 
+.pad-top-small {
+  padding-top:$base-spacing;
+}
+.pad-bottom-small {
+  padding-bottom:$base-spacing;
+}
+.pad-top {
+  padding-top:$base-spacing * 2;
+}
+.pad-bottom {
+  padding-bottom:$base-spacing * 2;
+}
+.pad-top-large {
+  padding-top:$base-spacing * 2 + $base-spacing;
+}
+.pad-bottom-large {
+  padding-bottom:$base-spacing * 2 + $base-spacing;
+}
+
 .jumbotron {
   p {
     font-weight: 300;
@@ -503,7 +522,6 @@ body > .panel {
   }
   
   &.text {
-    text-align:center;
     
     & > div {
       padding-top:$base-spacing * 2;

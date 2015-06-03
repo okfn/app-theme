@@ -4953,6 +4953,24 @@ a,
 a:focus {
   outline: 0; }
 
+.pad-top-small {
+  padding-top: 20px; }
+
+.pad-bottom-small {
+  padding-bottom: 20px; }
+
+.pad-top {
+  padding-top: 40px; }
+
+.pad-bottom {
+  padding-bottom: 40px; }
+
+.pad-top-large {
+  padding-top: 60px; }
+
+.pad-bottom-large {
+  padding-bottom: 60px; }
+
 .jumbotron p {
   font-weight: 300; }
 .jumbotron + .jumbotron {
@@ -5268,18 +5286,16 @@ body > .panel, body.pricing-panel > div:first-child {
   height: 10px;
   margin: 1px;
   width: 10px; }
-.carousel.text {
-  text-align: center; }
-  .carousel.text > div {
-    padding-top: 40px;
-    padding-bottom: 40px; }
-  .carousel.text .carousel-indicators {
-    bottom: 0; }
-    .carousel.text .carousel-indicators li {
-      background-color: rgba(122, 184, 0, 0.3);
-      border-color: rgba(122, 184, 0, 0); }
-      .carousel.text .carousel-indicators li.active {
-        background-color: #7ab800; }
+.carousel.text > div {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+.carousel.text .carousel-indicators {
+  bottom: 0; }
+  .carousel.text .carousel-indicators li {
+    background-color: rgba(122, 184, 0, 0.3);
+    border-color: rgba(122, 184, 0, 0); }
+    .carousel.text .carousel-indicators li.active {
+      background-color: #7ab800; }
 
 .two-pricing-panels > .pricing-panel {
   position: relative;
