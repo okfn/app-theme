@@ -188,6 +188,13 @@ html {
   }
 }
 
+//forms
+
+.form-control:focus {
+  box-shadow:none;
+}
+
+
 
 // Panels
 

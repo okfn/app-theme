@@ -5087,6 +5087,9 @@ html {
     .counter.inverse .label, .jumbotron.inverse .counter .label, .navbar.navbar-inverse + div .jumbotron:first-child .counter .label {
       color: #fff; }
 
+.form-control:focus {
+  box-shadow: none; }
+
 h1.panel-heading, .pricing-panel > div:first-child > h1, h2.panel-heading, .pricing-panel > div:first-child > h2, h3.panel-heading, .pricing-panel > div:first-child > h3, h4.panel-heading, .pricing-panel > div:first-child > h4, h5.panel-heading, .pricing-panel > div:first-child > h5, h6.panel-heading, .pricing-panel > div:first-child > h6 {
   margin: 0; }
 
