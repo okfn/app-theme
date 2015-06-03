@@ -1,1 +1,3 @@
-smoothScroll.init();
+smoothScroll.init({
+    updateURL: false,
+});
