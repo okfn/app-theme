@@ -251,6 +251,17 @@ body > .panel {
 }
 
 
+//thumbs
+
+.thumbnail + .caption {
+  color:$gray;
+  font-size: 86%;
+  display:block;
+  margin: - ($line-height-computed / 3) * 2 3px $line-height-computed 3px;
+  text-decoration:none;
+}
+
+
 .navbar-brand {
   
   .text {

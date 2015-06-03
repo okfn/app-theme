@@ -5121,6 +5121,13 @@ body > .panel, body.pricing-panel > div:first-child {
     background-color: #7ab800;
     color: #fff; }
 
+.thumbnail + .caption {
+  color: #686868;
+  font-size: 86%;
+  display: block;
+  margin: -14px 3px 21px 3px;
+  text-decoration: none; }
+
 .navbar-brand .text {
   font-weight: 900;
   text-transform: uppercase;
