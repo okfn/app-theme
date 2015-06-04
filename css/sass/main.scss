@@ -61,6 +61,10 @@
 
 
 //Theme
+
+//Syntax highlighter
+@import "prism";
+
 $base-spacing: 20px;
 $header-gradient: radial-gradient(circle at 50% top, rgba($green,0.6) 0%,rgba($green,0) 75%),radial-gradient(circle at right top, $green 0%,rgba($green,0) 57%);
 @import "theme";
