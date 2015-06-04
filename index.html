@@ -46,6 +46,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#examples" data-scroll >Examples</a></li>
+            <li><a href="#getting-started" data-scroll >Getting Started</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,31 +58,12 @@
       <div class="container">
         <h1>App Theme</h1>
         <p>Bootstrap based theme, for application based websites.</p>
+        <a class="btn btn-lg btn-primary" href="https://github.com/okfn/app-theme" rel="external">Download on Github</a>
       </div>
     </div>
       
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>SASS</h2>
-          <p>Stylesheets for this theme are compiled from SASS files found in <a href="https://github.com/okfn/app-theme/tree/gh-pages/css/sass"><code>css/sass</code></a>. Bootstrap (3.3.3) makes up the majority of these files <a href="https://github.com/okfn/app-theme/tree/gh-pages/css/sass/bootstrap"><code>css/sass/bootstrap</code></a>. If you make changes to the SASS files, they will need to be recompiled to <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/main.css"><code>css/main.css</code></a>.</p>
-        </div>
-        <div class="col-md-4">
-          <h2>CSS</h2>
-          <p>The main CSS file for this theme can be found here <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/main.css"><code>css/main.css</code></a>. Additional CSS files exist for the Goodtables and Spending Dashboard examples <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/goodtables.css"><code>goodtables.css</code></a> <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/dashboard.css"><code>dashboard.css</code></a>. You can link to themes CSS file here:</p>
-          <div class="input-group">
-            <div class="input-group-addon"><a href="https://cdn.rawgit.com/okfn/app-theme/3da05feff11fe55ca1df3cc801087652345978cf/css/main.min.css"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></div>
-              <input type="text" class="form-control" value="https://cdn.rawgit.com/okfn/app-theme/3da05feff11fe55ca1df3cc801087652345978cf/css/main.min.css">
-          </div>
-       </div>
-        <div class="col-md-4">
-          <h2>JS</h2>
-          <p>Javascript files can be found in <a href="https://github.com/okfn/app-theme/tree/gh-pages/js"><code>js</code></a>. This folder contains <a href="https://github.com/okfn/app-theme/blob/gh-pages/js/main.js"><code>main.js</code></a> where you can add any custom javascript, <a href="https://github.com/okfn/app-theme/blob/gh-pages/js/plugins.js"><code>plugins.js</code></a> for jQuery/helper plugins, and <a href="https://github.com/okfn/app-theme/tree/gh-pages/js/vendor"><code>vendor</code></a> where you’ll find Jquery, Bootstrap and Modernizr.</p>
-        </div>
-      </div>
-      <hr id="examples">
-      <h2>Example Uses</h2>
+      <h2 id="examples">Example Uses</h2>
       <div class="row">
         <div class="col-sm-6 col-md-3">
           <a href="examples/single-page.html" class="thumbnail">
@@ -108,9 +90,192 @@
           <a href="examples/pricing.html" class="caption">Pricing</a>
         </div>
       </div>
+      <hr id="getting-started">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Getting Started</h2>
+          <p>This theme is a lightly modified version of what you get out of the box with Bootstrap. If you are not familiar with Bootstrap, a good first step would be to check out the docs <a href="http://getbootstrap.com/" rel="external">here</a>.</p>
+          <h3>CDN (Content Delivery Network)</h3>
+          <p>Thanks to <a href="https://rawgit.com/" rel="external">RawGit</a>, we can provide CDN links for our latest compiled and minified CSS and JavaScript:</p>
+          <pre><code class="language-markup">&lt!-- OK Panel CSS --&gt;
+&ltlink rel="stylesheet" href="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/css/frontend.css"&gt;
+          
+&lt!-- Theme CSS --&gt;
+&ltlink rel="stylesheet" href="//cdn.rawgit.com/okfn/app-theme/3da05feff11fe55ca1df3cc801087652345978cf/css/main.min.css"&gt;
+
+&lt!-- Optional Modernizr --&gt;
+&ltscript src="//cdn.rawgit.com/okfn/app-theme/2114842a6bdf0c49eb94faca4b7c5dc4a29d2249/js/vendor/modernizr-2.8.3.min.js"&gt;&lt/script&gt;
+
+&lt;!-- JQuery --&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Bootstrap JS --&gt;
+&lt;script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+&lt!-- Theme plugins JS --&gt;
+&lt;script src="//cdn.rawgit.com/okfn/app-theme/00464f102ee73ea45c1ad5c0dd6c77708d6dbdc6/js/plugins.min.js"&gt;&lt;/script&gt;
+
+&lt!-- OK Panel JS --&gt;
+&lt;script src="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/js/frontend.min.js"&gt;&lt;/script&gt;
+
+&lt!-- Theme JS --&gt;
+&lt;script src="//cdn.rawgit.com/okfn/app-theme/1a0030fe829abeaf25d87ed4923efed324e77259/js/main.min.js"&gt;&lt;/script&gt;</code></pre>
+          
+          <h3>Source Code</h3>
+          <p>All the theme files can be downloaded from <a href="https://github.com/okfn/app-theme" rel="external">here</a>. This repository contains both the precompiled CSS and JavaScript referenced above, as well as the source files.</p>
+          
+          <h4>SASS</h4>
+          <p>Stylesheets for this theme are compiled from SASS files found in <a href="https://github.com/okfn/app-theme/tree/gh-pages/css/sass"><code>css/sass</code></a>. Bootstrap (3.3.3) makes up the majority of these files <a href="https://github.com/okfn/app-theme/tree/gh-pages/css/sass/bootstrap"><code>css/sass/bootstrap</code></a>. If you make changes to the SASS files, they will need to be recompiled to <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/main.css"><code>css/main.css</code></a>.</p>
+
+          <h4>CSS</h4>
+          <p>The main CSS file for this theme can be found here <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/main.css"><code>css/main.css</code></a>. Additional CSS files for the Goodtables and Spending Dashboard examples, can be found in the <code>examples</code> folder.</p>
+          
+          <h4>JS</h4>
+          <p>Javascript files can be found in <a href="https://github.com/okfn/app-theme/tree/gh-pages/js"><code>js</code></a>. This folder contains <a href="https://github.com/okfn/app-theme/blob/gh-pages/js/main.js"><code>main.js</code></a> where you can add any custom javascript, <a href="https://github.com/okfn/app-theme/blob/gh-pages/js/plugins.js"><code>plugins.js</code></a> for jQuery/helper plugins, and <a href="https://github.com/okfn/app-theme/tree/gh-pages/js/vendor"><code>vendor</code></a> where you’ll find Jquery, Bootstrap and Modernizr.</p>
+          <h5>Plugins included:</h5>
+          <ul>
+            <li>equalize.js</li>
+            <li>smooth-scroll</li>
+            <li>prism.js</li>
+          </ul>
+          
+          <h3>Markup</h3>
+          <p>As a starting point, you can use the basic template <span class="visible-xs-inline">below</span><span class="hidden-xs">to the right</span>, or modify one the above <a href="#examples" data-scroll >examples</a>. This HTML closely resembles what you might use with a vanilla Bootstrap instance, there are a few notable additions however.</p>
+
+          <h4>Open Knowledge Ribbon / Panel</h4>
+          <p>Lines <code>11</code>, <code>24</code>, <code>28</code> and <code>104</code> collectively contain all the parts required for the <a href="http://okfnlabs.org/ok-panel/" rel="external">Open Knowledge Panel</a>.</p>
+
+          <h4>Logo Icon</h4>
+          <p>The theme includes a quick and easy way to give your project a graphical logo. Choose one of the Bootstrap <a href="http://getbootstrap.com/components/#glyphicons" rel="external">glyphicons</a> and use it as demonstrated on line <code>38</code>.</p>
+
+          <h4>Release Badge</h4>
+          <p>On line <code>41</code> you’ll see a method of adding an “alpha” or “beta” badge, after the logo.</p>
+
+          <h4>Smooth Scroll</h4>
+          <p>This theme includes a ‘smooth scroll’ plugin. Activate the scroll animation on ID links by adding <code>data-scroll</code> to the anchor. Example on line <code>47</code>.</p>
+
+          <h4>Inverse Jumbotron</h4>
+          <p>The Bootstrap ‘Jumbotron’ can be given alternative styling by adding a class of <code>inverse</code>. See line <code>54</code>.</p>
+
+          <h4>Open Knowledge Footer</h4>
+          <p>From line <code>68</code> to <code>99</code> you’ll find the standard Open Knowledge footer.</p>
+          
+          <h4>Full Width Panels</h4>
+          <p>A <code>.panel</code> placed directly inside the <code>body</code> is styled slightly differently. See quote section in <a href="examples/single-page.html">single page example</a>.</p>
+
+        </div>
+        <div class="col-sm-6">
+          <h6>Basic template</h6>
+          <pre class="line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html class="no-js" lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;
+  &lt;title&gt;My Awesome App&lt;/title&gt;
+  &lt;meta name="description" content=""&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+  &lt!-- OK Panel CSS --&gt;
+  &ltlink rel="stylesheet" href="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/css/frontend.css"&gt;
+          
+  &lt!-- Theme CSS --&gt;
+  &ltlink rel="stylesheet" href="css/main.min.css"&gt;
+  
+  &lt!-- Optional Modernizr --&gt;
+  &lt;script src="js/vendor/modernizr-2.8.3.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;!--[if lt IE 8]&gt;
+      &lt;p class="browserupgrade"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;
+  &lt;![endif]--&gt;
+  &lt;div id="ok-panel" class="closed"&gt;&lt;iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+  &lt;nav class="navbar navbar-static-top"&gt;
+    &lt;div class="container"&gt;
+      &lt;a class="ok-ribbon" href="https://okfn.org/"&gt;&lt;img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"&gt;&lt;/a&gt;
+      
+      &lt;div class="navbar-header"&gt;
+        &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"&gt;
+          &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;a class="navbar-brand has-icon" href="./"&gt;
+          &lt;span class="glyphicon glyphicon-ok" aria-hidden="true"&gt;&lt;/span&gt;
+          &lt;span class="text"&gt;My Awesome App&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;span class="release badge"&gt;alpha&lt;/span&gt;
+      &lt;/div&gt;
+      
+      &lt;div id="navbar" class="collapse navbar-collapse"&gt;
+        &lt;ul class="nav navbar-nav"&gt;
+          &lt;li&gt;&lt;a href="page.html"&gt;Link to page&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#anID" data-scroll &gt;Link to section of page&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+  
+  &lt;!-- page content start --&gt;
+  &lt;div class="jumbotron inverse"&gt;
+    &lt;div class="container"&gt;
+      &lt;h1&gt;My Awesome App&lt;/h1&gt;
+      &lt;p&gt;Introductory sentence or tagline.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    
+  &lt;div class="container"&gt;
+    
+    &lt;p&gt;Hello, world!&lt;/p&gt;
+    
+  &lt;/div&gt;
+  
+  &lt;!-- footer start --&gt;
+    &lt;footer class="site-footer"&gt;
+      &lt;div class="container"&gt;
+        &lt;a class="footer-logo" href="https://okfn.org/"&gt;
+          &lt;img src="https://bytebucket.org/okfn/assets.okfn.org/raw/88b24904b8ecded5e6d530739743162d1c5b3d93/p/okfn/img/okfn-logo-landscape-white.png" alt="Open Knowledge"&gt;
+        &lt;/a&gt;
+        &lt;div class="footer-links"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="https://okfn.org/privacy-policy/"&gt;Privacy policy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://okfn.org/ip-policy/"&gt;IP policy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://okfn.org/cookie-policy/"&gt;Cookie policy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://okfn.org/terms-of-use/"&gt;Terms of use&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul class="footer-social"&gt;
+            &lt;li&gt;&lt;a href="https://facebook.com/OKFNetwork"&gt;
+              &lt;img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook"&gt;
+              &lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href="https://twitter.com/okfn"&gt;
+                &lt;img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter"&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href="https://www.youtube.com/user/openknowledgefdn"&gt;
+                &lt;img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube"&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;p&gt;Open Knowledge Foundation is incorporated in England and Wales as a company Limited by guarantee. Company no. 05133759. Registered address: St. John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, UK. VAT Registration no. GB 984404989.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.11.3.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+    &lt;script src="js/vendor/bootstrap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/plugins.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/js/frontend.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="js/main.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+      </div>
     </div>
-    
-    
     <!-- footer start -->
     <footer class="site-footer">
       <div class="container">
@@ -154,7 +319,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="//okfnlabs.org/ok-panel/assets/js/frontend.js" type="text/javascript"></script>
+    <script src="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/js/frontend.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics -->
