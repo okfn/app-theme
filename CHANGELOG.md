@@ -22,6 +22,7 @@
 - Stripped down Modernizr and added development version
 - Added Prism
 - Added minified JS files
+- Open external links in new tab
 
 
 ## 27-05-2015
