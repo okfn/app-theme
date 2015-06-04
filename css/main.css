@@ -5113,6 +5113,8 @@ table.table thead tr th {
 
 pre {
   font-size: 13px; }
+  pre code[class*="language-"] {
+    word-wrap: normal; }
 
 /* ==========================================================================
    Helper classes

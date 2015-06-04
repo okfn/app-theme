@@ -32,6 +32,10 @@ table.table {
 
 pre {
   font-size: ($font-size-base - 2);
+
+  code[class*="language-"] {
+    word-wrap:normal;
+  }
 }
 
 

@@ -24,6 +24,9 @@
 - Added minified JS files
 - Open external links in new tab
 
+### Fixed
+- Prevent code wrapping (Chrome) 
+
 
 ## 27-05-2015
 ### Changed
