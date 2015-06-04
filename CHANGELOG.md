@@ -20,6 +20,8 @@
 - Tidied up _theme.scss and added some headings
 - Added styling for browser upgrade warning
 - Stripped down Modernizr and added development version
+- Added Prism
+- Added minified JS files
 
 
 ## 27-05-2015
