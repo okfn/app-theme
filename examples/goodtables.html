@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="//okfnlabs.org/ok-panel/assets/css/frontend.css"/>
+    <link rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"/>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/goodtables.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,12 +19,12 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div id="ok-panel" class="closed"><iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe></div>
+
+    <div id="ok-panel" class="closed"><div class="container"><iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"></iframe></div></div>
 
     <nav class="navbar navbar-static-top">
       <div class="container">
-        <a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
+        <a class="ok-ribbon" href="https://okfn.org/"><img src="//a.okfn.org/html/oki/panel/assets/images/oki-ribbon.png" alt="Open Knowledge International"></a>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -33,9 +33,9 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand has-icon" href="./">
-            
+
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-            
+
             <span class="text">Your awesome app</span>
           </a>
           <span class="alpha release badge">alpha</span>
@@ -48,17 +48,17 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    
+
     <!-- page content start -->
 
     <div class="goodtables">
 
       <div class="jumbotron">
         <div class="container">
-        
+
           <h1>Good Tables</h1>
           <p>Good Tables is a free hosted service for <a href="{{ '/docs' | prepend: site.baseurl }}">validating</a> tabular data.</p>
-          
+
           <form class="well">
             <div class="first instructions">
               <h2>Where is your data table?</h2>
@@ -66,7 +66,7 @@
             </div>
             <div class="row">
               <div class="file-source">
-              
+
                 <div>
                     <input name="data-field" id="data-field-1" class="data-field-url" value="option1" checked="" type="radio">
                     <label for="data-field-1">
@@ -80,9 +80,9 @@
                     </label>
                 </div>
               </div>
-              
+
               <div class="col-md-9">
-              
+
                 <div class="input-group">
                   <input type="text" aria-label="Text input with segmented button dropdown" class="form-control input-lg" placeholder="http://">
                   <div class="input-group-btn">
@@ -105,7 +105,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="collapse" id="advanced-options">
               <div class="row">
                   <div class="col-md-4">
@@ -129,8 +129,8 @@
                       <p class="help-block">Select to validate this data against a JSON Table Schema (<a title="Read more about JSON Table Schema" href="http://dataprotocols.org/json-table-schema/" target="_blank">What's that?</a>).</p>
                   </div>
               </div>
-            
-            
+
+
               <div class="row">
                 <div class="col-md-4">
                     <h4>Stop on first error</h4>
@@ -171,7 +171,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-4">
                     <h4>Ignore duplicate rows</h4>
@@ -192,18 +192,18 @@
                     </p>
                 </div>
             </div>
-            
+
           </div>
           <a class="more-options" data-toggle="collapse" data-target="#advanced-options" aria-expanded="false" aria-controls="advanced-options">More Options <span class="caret"></span></a>
-          
+
           <a class="btn btn-info btn-lg" href="{{ '/goodtables-report' | prepend: site.baseurl }}">Validate</a>
-        </form>  
-            
+        </form>
+
       </div>
     </div>
-    
-  
-    
+
+
+
     <div class="container">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -214,17 +214,17 @@
         </div>
       </div>
     </div>
-  
+
   </div>
-    
-    
+
+
     <!-- footer start -->
     <footer class="site-footer">
       <div class="container">
         <a class="footer-logo" href="https://okfn.org/">
-          <img src="https://bytebucket.org/okfn/assets.okfn.org/raw/88b24904b8ecded5e6d530739743162d1c5b3d93/p/okfn/img/okfn-logo-landscape-white.png" alt="Open Knowledge">
+          <img src="https://a.okfn.org/img/oki/landscape-white-468x122.png" alt="Open Knowledge">
         </a>
-    
+
         <div class="footer-links">
           <ul>
             <li><a href="https://okfn.org/privacy-policy/">Privacy policy</a></li>
@@ -232,7 +232,7 @@
             <li><a href="https://okfn.org/cookie-policy/">Cookie policy</a></li>
             <li><a href="https://okfn.org/terms-of-use/">Terms of use</a></li>
           </ul>
-    
+
           <ul class="footer-social">
             <li><a href="https://facebook.com/OKFNetwork">
               <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
@@ -249,11 +249,11 @@
             </li>
           </ul>
         </div>
-        
+
         <hr>
-    
+
         <p>Open Knowledge Foundation is incorporated in England and Wales as a company Limited by guarantee. Company no. 05133759. Registered address: St. John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, UK. VAT Registration no. GB 984404989.</p>
-        
+
       </div>
     </footer>
 
@@ -261,7 +261,7 @@
     <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/plugins.js"></script>
-    <script src="//okfnlabs.org/ok-panel/assets/js/frontend.js" type="text/javascript"></script>
+    <script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js" type="text/javascript"></script>
     <script src="../js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

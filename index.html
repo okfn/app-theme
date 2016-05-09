@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="//okfnlabs.org/ok-panel/assets/css/frontend.css"/>
+    <link rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"/>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
@@ -23,12 +23,12 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div id="ok-panel" class="closed"><iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe></div>
+
+    <div id="ok-panel" class="closed"><div class="container"><iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"></iframe></div></div>
 
     <nav class="navbar navbar-static-top">
       <div class="container">
-        <a class="ok-ribbon" href="https://okfn.org/"><img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"></a>
+        <a class="ok-ribbon" href="https://okfn.org/"><img src="//a.okfn.org/html/oki/panel/assets/images/oki-ribbon.png" alt="Open Knowledge International"></a>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -37,9 +37,9 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand has-icon" href="/">
-            
+
             <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-            
+
             <span class="text">App Theme</span>
           </a>
         </div>
@@ -51,7 +51,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    
+
     <!-- page content start -->
 
     <div class="jumbotron inverse">
@@ -61,7 +61,7 @@
         <a class="btn btn-lg btn-primary" href="https://github.com/okfn/app-theme" rel="external">Download on Github</a>
       </div>
     </div>
-      
+
     <div class="container">
       <h2 id="examples">Example Uses</h2>
       <div class="row">
@@ -98,8 +98,8 @@
           <h3>CDN (Content Delivery Network)</h3>
           <p>Thanks to <a href="https://rawgit.com/" rel="external">RawGit</a>, we can provide CDN links for our latest compiled and minified CSS and JavaScript:</p>
           <pre><code class="language-markup">&lt!-- OK Panel CSS --&gt;
-&ltlink rel="stylesheet" href="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/css/frontend.css"&gt;
-          
+&ltlink rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"&gt;
+
 &lt!-- Theme CSS --&gt;
 &ltlink rel="stylesheet" href="//cdn.rawgit.com/okfn/app-theme/924b03098a3d0fcaa5acf573f51571f519f80c94/css/main.min.css"&gt;
 
@@ -116,20 +116,20 @@
 &lt;script src="//cdn.rawgit.com/okfn/app-theme/00464f102ee73ea45c1ad5c0dd6c77708d6dbdc6/js/plugins.min.js"&gt;&lt;/script&gt;
 
 &lt!-- OK Panel JS --&gt;
-&lt;script src="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/js/frontend.min.js"&gt;&lt;/script&gt;
+&lt;script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js"&gt;&lt;/script&gt;
 
 &lt!-- Theme JS --&gt;
 &lt;script src="//cdn.rawgit.com/okfn/app-theme/1a0030fe829abeaf25d87ed4923efed324e77259/js/main.min.js"&gt;&lt;/script&gt;</code></pre>
-          
+
           <h3>Source Code</h3>
           <p>All the theme files can be downloaded from <a href="https://github.com/okfn/app-theme" rel="external">here</a>. This repository contains both the precompiled CSS and JavaScript referenced above, as well as the source files.</p>
-          
+
           <h4>SASS</h4>
           <p>Stylesheets for this theme are compiled from SASS files found in <a href="https://github.com/okfn/app-theme/tree/gh-pages/css/sass"><code>css/sass</code></a>. Bootstrap (3.3.3) makes up the majority of these files <a href="https://github.com/okfn/app-theme/tree/gh-pages/css/sass/bootstrap"><code>css/sass/bootstrap</code></a>. If you make changes to the SASS files, they will need to be recompiled to <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/main.css"><code>css/main.css</code></a>.</p>
 
           <h4>CSS</h4>
           <p>The main CSS file for this theme can be found here <a href="https://github.com/okfn/app-theme/blob/gh-pages/css/main.css"><code>css/main.css</code></a>. Additional CSS files for the Goodtables and Spending Dashboard examples, can be found in the <code>examples</code> folder.</p>
-          
+
           <h4>JS</h4>
           <p>Javascript files can be found in <a href="https://github.com/okfn/app-theme/tree/gh-pages/js"><code>js</code></a>. This folder contains <a href="https://github.com/okfn/app-theme/blob/gh-pages/js/main.js"><code>main.js</code></a> where you can add any custom javascript, <a href="https://github.com/okfn/app-theme/blob/gh-pages/js/plugins.js"><code>plugins.js</code></a> for jQuery/helper plugins, and <a href="https://github.com/okfn/app-theme/tree/gh-pages/js/vendor"><code>vendor</code></a> where you’ll find Jquery, Bootstrap and Modernizr.</p>
           <h5>Plugins included:</h5>
@@ -138,7 +138,7 @@
             <li>smooth-scroll</li>
             <li>prism.js</li>
           </ul>
-          
+
           <h3>Markup</h3>
           <p>As a starting point, you can use the basic template <span class="visible-xs-inline">below</span><span class="hidden-xs">to the right</span>, or modify one the above <a href="#examples" data-scroll >examples</a>. This HTML closely resembles what you might use with a vanilla Bootstrap instance, there are a few notable additions however.</p>
 
@@ -159,7 +159,7 @@
 
           <h4>Open Knowledge Footer</h4>
           <p>From line <code>68</code> to <code>99</code> you’ll find the standard Open Knowledge footer.</p>
-          
+
           <h4>Full Width Panels</h4>
           <p>A <code>.panel</code> placed directly inside the <code>body</code> is styled slightly differently. See quote section in <a href="examples/single-page.html">single page example</a>.</p>
 
@@ -176,11 +176,11 @@
   &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 
   &lt!-- OK Panel CSS --&gt;
-  &ltlink rel="stylesheet" href="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/css/frontend.css"&gt;
-          
+  &ltlink rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"&gt;
+
   &lt!-- Theme CSS --&gt;
   &ltlink rel="stylesheet" href="css/main.min.css"&gt;
-  
+
   &lt!-- Optional Modernizr --&gt;
   &lt;script src="js/vendor/modernizr-2.8.3.min.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
@@ -189,12 +189,12 @@
   &lt;!--[if lt IE 8]&gt;
       &lt;p class="browserupgrade"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;
   &lt;![endif]--&gt;
-  &lt;div id="ok-panel" class="closed"&gt;&lt;iframe src="//assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;
+  &lt;div id="ok-panel" class="closed"&gt;&lt;div class="container"&gt;&lt;iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
 
   &lt;nav class="navbar navbar-static-top"&gt;
     &lt;div class="container"&gt;
-      &lt;a class="ok-ribbon" href="https://okfn.org/"&gt;&lt;img src="//okfnlabs.org/ok-panel/assets/images/ok-ribbon.png" alt="Open Knowledge"&gt;&lt;/a&gt;
-      
+      &lt;a class="ok-ribbon" href="//okfn.org/"&gt;&lt;img src="//a.okfn.org/html/oki/panel/assets/images/oki-ribbon.png" alt="Open Knowledge International"&gt;&lt;/a&gt;
+
       &lt;div class="navbar-header"&gt;
         &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"&gt;
           &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
@@ -208,7 +208,7 @@
         &lt;/a&gt;
         &lt;span class="release badge"&gt;alpha&lt;/span&gt;
       &lt;/div&gt;
-      
+
       &lt;div id="navbar" class="collapse navbar-collapse"&gt;
         &lt;ul class="nav navbar-nav"&gt;
           &lt;li&gt;&lt;a href="page.html"&gt;Link to page&lt;/a&gt;&lt;/li&gt;
@@ -217,7 +217,7 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/nav&gt;
-  
+
   &lt;!-- page content start --&gt;
   &lt;div class="jumbotron inverse"&gt;
     &lt;div class="container"&gt;
@@ -225,18 +225,18 @@
       &lt;p&gt;Introductory sentence or tagline.&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-    
+
   &lt;div class="container"&gt;
-    
+
     &lt;p&gt;Hello, world!&lt;/p&gt;
-    
+
   &lt;/div&gt;
-  
+
   &lt;!-- footer start --&gt;
     &lt;footer class="site-footer"&gt;
       &lt;div class="container"&gt;
         &lt;a class="footer-logo" href="https://okfn.org/"&gt;
-          &lt;img src="https://bytebucket.org/okfn/assets.okfn.org/raw/88b24904b8ecded5e6d530739743162d1c5b3d93/p/okfn/img/okfn-logo-landscape-white.png" alt="Open Knowledge"&gt;
+          &lt;img src="https://a.okfn.org/img/oki/landscape-white-468x122.png" alt="Open Knowledge"&gt;
         &lt;/a&gt;
         &lt;div class="footer-links"&gt;
           &lt;ul&gt;
@@ -269,7 +269,7 @@
     &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.11.3.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
     &lt;script src="js/vendor/bootstrap.min.js"&gt;&lt;/script&gt;
     &lt;script src="js/plugins.js"&gt;&lt;/script&gt;
-    &lt;script src="https://cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/js/frontend.min.js" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js" type="text/javascript"&gt;&lt;/script&gt;
     &lt;script src="js/main.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
@@ -280,9 +280,9 @@
     <footer class="site-footer">
       <div class="container">
         <a class="footer-logo" href="https://okfn.org/">
-          <img src="https://bytebucket.org/okfn/assets.okfn.org/raw/88b24904b8ecded5e6d530739743162d1c5b3d93/p/okfn/img/okfn-logo-landscape-white.png" alt="Open Knowledge">
+          <img src="https://a.okfn.org/img/oki/landscape-white-468x122.png" alt="Open Knowledge">
         </a>
-    
+
         <div class="footer-links">
           <ul>
             <li><a href="https://okfn.org/privacy-policy/">Privacy policy</a></li>
@@ -290,7 +290,7 @@
             <li><a href="https://okfn.org/cookie-policy/">Cookie policy</a></li>
             <li><a href="https://okfn.org/terms-of-use/">Terms of use</a></li>
           </ul>
-    
+
           <ul class="footer-social">
             <li><a href="https://facebook.com/OKFNetwork">
               <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
@@ -307,11 +307,11 @@
             </li>
           </ul>
         </div>
-        
+
         <hr>
-    
+
         <p>Open Knowledge Foundation is incorporated in England and Wales as a company Limited by guarantee. Company no. 05133759. Registered address: St. John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, UK. VAT Registration no. GB 984404989.</p>
-        
+
       </div>
     </footer>
 
@@ -319,7 +319,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="//cdn.rawgit.com/okfn/ok-panel/v1.0.0/assets/js/frontend.min.js" type="text/javascript"></script>
+    <script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics -->
