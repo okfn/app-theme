@@ -15,11 +15,11 @@ $gray:                   lighten($gray-base, 23%) !default; // #696969
 $gray-light:             lighten($gray-base, 49%) !default; // #ababab
 $gray-lighter:           lighten($gray-base, 79%) !default; // #f7f7f7
 
-$green: rgb(122, 184, 0); // #7ab800
-$red: rgb(255, 0, 0);
-$blue: rgb(0, 165, 224);
+$green: #69b93b;
+$red: #da2e29;
+$blue: #29a5da;
 
-$brand-primary:         $green !default; 
+$brand-primary:         $green !default;
 $brand-success:         #8acd00 !default;
 $brand-info:            $blue !default;
 $brand-warning:         #E9D046 !default;
@@ -864,5 +864,3 @@ $page-header-border-color:    $gray-lighter !default;
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 // ** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
-
-
