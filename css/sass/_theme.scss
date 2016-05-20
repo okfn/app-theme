@@ -476,14 +476,16 @@ body > .panel {
     position:relative;
 
     //ribbon
-    .ok-ribbon {
-      margin-left:-20px;
-      margin-right:-20px;
+    #ok-panel-wrapper {
+      .ok-ribbon {
+        margin-left:-20px;
+        margin-right:-20px;
 
-      @media only screen and (min-width : 576px) {
-        margin-left:0;
-        margin-right:0;
-        position:absolute ;
+        @media only screen and (min-width : 576px) {
+          margin-left:0;
+          margin-right:0;
+          position:absolute;
+        }
       }
 
       & + .navbar-header {
