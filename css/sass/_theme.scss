@@ -73,7 +73,7 @@ pre {
   color: #fff;
   padding: $base-spacing / 2 $base-spacing;
   text-align:center;
-  
+
   a {
     color:$gray-base;
   }
@@ -83,36 +83,36 @@ pre {
   p {
     font-weight: 300;
   }
-  
+
   & + .jumbotron {
     margin-top:-30px;
   }
-  
+
   &:last-child {
     margin-bottom:0;
   }
-  
+
   &.inverse {
     background-image: $header-gradient;
     background-color:$navbar-inverse-bg;
     color:#fff;
-    
+
     p,
     a {
       color:#fff;
     }
-    
+
     .dropdown-menu > li > a {
       color:$navbar-inverse-bg;
     }
-    
+
     .form-control,
     .btn {
       border-color:$navbar-inverse-bg;
       color:$navbar-inverse-bg;
       @include placeholder(rgba($green,0.5));
     }
-    
+
     .btn-primary {
       background-color:#fff;
     }
@@ -120,18 +120,18 @@ pre {
       color:#fff;
       border-color:$gray-dark;
     }
-    
+
     .well {
       background-color: rgba(0,0,0,0.03);
       border-color: darken($navbar-inverse-bg, 2);
       box-shadow: none;
     }
-    
+
     .counter {
       @extend .counter.inverse;
     }
   }
-  
+
   &.danger {
     background-color:$brand-danger;
     color:#fff;
@@ -139,11 +139,11 @@ pre {
   &.warning {
     background-color:$brand-warning;
   }
-  
+
   &.icon {
     position:relative;
     overflow:hidden;
-  
+
     & > .glyphicon {
       position:absolute;
       left:70%;
@@ -167,7 +167,7 @@ pre {
 
 .counter {
   margin-top:20px;
-  
+
   .value > span {
     background-color:$gray-dark;
     font-weight:bold;
@@ -182,7 +182,7 @@ pre {
     border-radius:1px;
     position:relative;
     color:#fff;
-    
+
     &:after {
       content:'';
       width:80px;
@@ -194,7 +194,7 @@ pre {
       background-color:#fff;
     }
   }
-  
+
   .label {
     color:$gray-dark;
     font-size:20px;
@@ -204,18 +204,18 @@ pre {
     display:block;
     padding:0;
   }
- 
+
   &.inverse {
     background-color:#FF0004;
     .value > span {
       background-color:#fff;
       color:$navbar-inverse-bg;
-      
+
       &:after {
         background-color:$navbar-inverse-bg;
       }
     }
-    
+
     .label {
       color:#fff;
     }
@@ -275,7 +275,7 @@ body > .panel {
   & > div:first-child {
     @extend .panel;
     @extend .panel-default;
-    
+
     & > h1,
     & > h2,
     & > h3,
@@ -283,7 +283,7 @@ body > .panel {
     & > h5,
     & > h6 {
       @extend .panel-heading;
-      
+
       & + div {
         @extend .panel-body;
       }
@@ -312,24 +312,24 @@ body > .panel {
 
 .nav-stacked > li {
   background-color:$gray-lighter;
-  
+
   & + li {
     margin:0;
   }
-  
+
   &:first-child {
     border-top:solid 15px $gray-lighter;
   }
-  
+
   &:last-child {
     border-bottom:solid 15px $gray-lighter;
   }
-  
+
   & > a:hover,
   & > a:focus {
     background-color: rgba(255,255,255,0.50);
   }
-  
+
   &.active a {
     background-color:$brand-primary;
     color:#fff;
@@ -345,21 +345,21 @@ body > .panel {
     margin: 1px;
     width: 10px;
   }
-  
+
   &.text {
-    
+
     & > div {
       padding-top:$base-spacing * 2;
       padding-bottom:$base-spacing * 2;
     }
-    
+
     .carousel-indicators {
       bottom:0;
-      
+
       li {
         background-color: rgba($brand-primary, 0.3);
         border-color: rgba($brand-primary, 0);
-        
+
         &.active {
           background-color: $brand-primary;
         }
@@ -372,14 +372,14 @@ body > .panel {
    ========================================================================== */
 
 .navbar-brand {
-  
+
   .text {
     font-weight:900;
     text-transform:uppercase;
     letter-spacing:1px;
     position:relative;
     display:block;
-    
+
     &:before {
       content:'Open Knowledge';
       display:block;
@@ -390,11 +390,11 @@ body > .panel {
       letter-spacing:1px;
     }
   }
-  
+
   .glyphicon {
     $icon-colour:$green;
     $icon-shadow: darken($icon-colour, 2);
-    
+
     float:left;
     background-color:$icon-colour;
     border-radius:50%;
@@ -423,12 +423,12 @@ body > .panel {
                   $icon-shadow 15px 15px;
     overflow:hidden;
     display:none;
-    
+
     @media (min-width: $screen-sm-min) {
       display:block;
     }
   }
-  
+
   &.has-icon {
     .text {
       @media (min-width: $screen-sm-min) {
@@ -436,7 +436,7 @@ body > .panel {
       }
     }
   }
-  
+
   &:hover {
     color:$brand-primary;
   }
@@ -444,7 +444,7 @@ body > .panel {
 
 .navbar-header {
   position:relative;
-  
+
   .release.badge {
     position:absolute;
     left:100%;
@@ -456,7 +456,7 @@ body > .panel {
     padding: 2px 4px;
     opacity:0.3;
     display:none;
-    
+
     @media (min-width: $grid-float-breakpoint) {
       display:block;
     }
@@ -465,34 +465,34 @@ body > .panel {
 
 .navbar-toggle {
   background-color:$brand-primary;
-  
+
   .icon-bar {
     background-color:#fff;
   }
 }
-  
+
 .navbar {
   .container {
     position:relative;
-    
+
     //ribbon
     .ok-ribbon {
       margin-left:-20px;
       margin-right:-20px;
-      
+
       @media only screen and (min-width : 576px) {
         margin-left:0;
         margin-right:0;
-        position:absolute;
+        position:absolute ;
       }
-      
+
       & + .navbar-header {
         .navbar-toggle {
           float:left;
           margin-left:$base-spacing;
           margin-right:0;
         }
-        
+
         & + #navbar {
           .navbar-nav {
             @media (min-width: $grid-float-breakpoint) {
@@ -502,25 +502,25 @@ body > .panel {
         }
       }
     }
-    
+
     //nav
     .navbar-nav {
-      
+
       & > .active > a,
       & > .active > a:hover,
       & > .active > a:focus {
         background-color: $brand-primary;
         color: #fff;
       }
-      
+
       @media (min-width: $screen-sm-min) {
         float:right;
         font-size:16px;
-        
+
         & > li > a {
           $vert-padding: 4px;
           $vert-margin: (($navbar-height - 20px) / 2) - $vert-padding;
-          
+
           margin-bottom: $vert-margin;
           margin-top: $vert-margin;
           padding-top:$vert-padding;
@@ -530,41 +530,41 @@ body > .panel {
       }
     }
   }
-  
+
   &.navbar-inverse {
     background-image: $header-gradient;
-    
+
     .navbar-brand {
       color:#fff;
-      
+
       .text {
         &:before {
           color:#fff;
         }
       }
-      
+
       .glyphicon {
         background-color:#fff;
         text-shadow: none;
         color:$navbar-inverse-bg;
       }
     }
-    
+
     .release.badge {
       background-color:#fff;
       color:$navbar-inverse-bg;
       opacity:0.6;
     }
-    
+
     .open-knowledge {
       background-position:center -200px;
       border-bottom-color:#2D2D2D;
-      
+
       &:before {
         border-bottom-color:#000;
       }
     }
-    
+
     .navbar-nav {
       & > .active > a,
       & > .active > a:hover,
@@ -573,7 +573,7 @@ body > .panel {
         color: $navbar-inverse-link-active-color;
       }
     }
-    
+
     & + div .jumbotron:first-child {
       @extend .jumbotron.inverse;
     }
@@ -588,24 +588,24 @@ body > .panel {
     position:relative;
     top:0;
   }
-  
+
   & + .navbar {
     border-top:solid 3px darken($gray-lighter, 5);
-    
+
     &.navbar-inverse {
       border-top-color:$navbar-inverse-border;
     }
   }
-  
+
   & > iframe {
     width: 100%;
     height: 120px;
     overflow: hidden;
     border: 0
   }
-  
+
   &.in + .navbar {
-    
+
   }
 }
 
@@ -613,16 +613,16 @@ body > .panel {
 //Docs
 .docs {
   padding-bottom:20px;
-  
+
   & > .container > .wrapper {
     @include make-row();
-  
+
     & > .nav {
       @include make-sm-column(3);
-      
+
       & + .page-content {
         @include make-sm-column(9);
-        
+
         .embed-responsive {
           margin-bottom:20px;
         }
